@@ -27,14 +27,6 @@ function ContactForm() {
         e.target,
         "On6KrXoh5DxGaZsuf"
       )
-      .then(
-        (response) => {
-          setStatus("Message sent successfully!");
-        },
-        (error) => {
-          setStatus("Failed to send the message. Please try again.");
-        }
-      );
   };
 
   return (
