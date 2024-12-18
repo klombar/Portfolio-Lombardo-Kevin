@@ -4,8 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Portfolio-Lombardo-Kevin/',
-  build: {
-    minify: 'esbuild',
-  },
+  base: 'https://github.com/klombar/Portfolio-Lombardo-Kevin/',
 })
