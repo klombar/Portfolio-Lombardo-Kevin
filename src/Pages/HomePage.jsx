@@ -3,6 +3,7 @@ import Card from '../Components/Card.jsx';
 import Logo from '../Components/Logo.jsx';
 import Carrousel from '../Components/Carrousel.jsx';
 import Form from '../Components/Form.jsx';
+import emailjs from "emailjs-com";
 import Silverline from '../Components/Silverline.jsx';
 import photoKevin from '../Assets/Images/Photos/photo kevin transparente.png';
 import html from '../Assets/Images/Logo/logo HTML.png';
