@@ -1,0 +1,264 @@
+.presentation{
+  margin-bottom: 50px;
+}
+
+.presentation_title{
+   display: flex;
+   justify-content: center;
+   &_portfolio {
+    font-family: "roboto", sans-serif;
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding: 4px 19px;
+    .por {
+      color: rgb(61, 61, 61);
+      margin-right: 5px;
+    }
+    
+    .tfo {
+      background: linear-gradient(45deg, black, white); 
+      background-clip: padding-box;
+      -webkit-background-clip: text; 
+      color: transparent; 
+      margin-right: 5px;
+    }
+    
+    .lio {
+      color: white; 
+    }
+  }
+}
+
+.presentation_container_card{
+  display: flex;
+  justify-content: center;
+  padding: 60px 50px 110px 50px;
+  gap: 140px;
+}
+
+.presentation_container_card_img{
+  width: 400px;
+  height: 555px;
+  border-radius: 25px;
+  border: 4px solid black;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  &:hover {
+     transform: translate3d(10px, -10px, 0); 
+     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.6); 
+  }
+}
+
+.presentation_container_description{
+display: flex;
+align-items: center;
+border: 4px solid white;
+background-color: black;
+color: white;
+width:700px;
+height: 555px;
+padding: 40px;
+font-family: "Dancing Script", serif;
+font-size: 1.5rem;
+border-radius: 25px;
+box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.4);
+overflow: hidden;
+transition: transform 0.6s ease, box-shadow 0.6s ease;
+&:hover{
+  transform: translate3d(-10px, 10px, 0); 
+  box-shadow: 0px -12px 24px rgba(255, 255, 255, 0.6);
+ }
+}
+
+.competences{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  gap: 50px;
+}
+
+.competences_title_container{
+    display: flex;
+    justify-content: center;
+    &_developper{
+      font-size: 45px;
+      font-family: "roboto", sans-serif;
+    }
+}
+
+.competences_logo_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  height: 500px;
+  margin-bottom: 50px;
+  box-shadow: -15px 15px 15px rgba(0, 0, 0, 0.5);
+  &_line{
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 25px;
+    box-shadow: 
+    0px -20px 120px rgba(255, 255, 255, 1.5),
+    0px 20px 120px rgba(255, 255, 255, 1.5);
+  }
+  &_html{
+    position: absolute;
+    top: 37%;
+    left: 6%;
+    transition: transform 0.3s ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &_css{
+    position: absolute;
+    bottom: 37%;
+    left: 13%;
+    transition: transform 0.3s ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &_git{
+    position: absolute;
+    top: 37%;
+    left: 20%;
+    transition: transform 0.3s ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  } 
+  &_sass{
+    position: absolute;
+    bottom: 37%;
+    left: 29%;
+    transition: transform 0.3s ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &_github{
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    transition: transform 0.3s ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &_javascript{
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transition: transform 0.3s ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &_react{
+    position: absolute;
+    bottom: 37%;
+    left: 43%;
+    transition: transform 0.3s ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &_redux{
+    position: absolute;
+    top: 37%;
+    left: 67%;
+    transition: transform 0.3s ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &_api{
+    position: absolute;
+    bottom: 36%;
+    left: 58%;
+    transition: transform 0.3s ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &_notion{
+    position: absolute;
+    bottom: 37%;
+    left: 76%;
+    transition: transform 0.3s ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &_feedly{
+    position: absolute;
+    top: 37%;
+    left: 85%;
+    transition: transform 0.3s ease;
+    background-color: white;
+    border-radius: 10px;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}
+
+.projets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  &_title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 45px;
+    margin: 25px 0px;
+    font-family: "roboto", sans-serif;
+  }
+  &_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  gap: 25px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: linear-gradient(-160deg, black 44%, white 77%);
+  &_title{
+    margin-top: 30px;
+    font-size: 45px;
+  }
+  &_formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 10px;
+  }
+}
+
+.silverline{
+  border: 2.5px solid #BDC3C7;  
+  width: 100%;
+}

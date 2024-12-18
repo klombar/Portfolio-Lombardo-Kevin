@@ -1,0 +1,61 @@
+form{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   border-radius: 25px;
+
+}
+
+fieldset {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 25px;
+   gap: 30px;
+   width: 80%;
+   padding: 40px;
+   background-color: black;
+   box-shadow: -15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+legend{
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: white;
+}
+
+.form_name_field,
+.form_email_field,
+.form_textarea_field {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  width: 65%;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: border-color 0.3s;
+}
+
+.form_name_field input,
+.form_email_field input{
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.form_textarea_field textarea {
+   width: 100%;
+   height: 200px;
+   resize: vertical;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
