@@ -1,6 +1,6 @@
 .swiper {
   width: 100vw;
-  height: 80vh;
+  height: 81vh;
 }
 
 .swiper-wrapper{
@@ -19,11 +19,13 @@
   color: #fff;
   & img{
      object-fit: cover;
-     object-position: top;
      width: 100%;
-     max-width: 1440px;
+     max-width: 1240px;
      height: 80%;
      border-radius: 20px;
+     border: 1px solid lightgrey;
+     box-shadow: 
+     10px 10px 10px rgba(0, 0, 0, 0.5),
   }
 }
 
@@ -36,7 +38,7 @@
 .swiper-slide:nth-child(7n),
 .swiper-slide:nth-child(8n),
 .swiper-slide:nth-child(9n) {
-  background-color: rgb(0, 0, 0);
+  background-color: #dfe4e7;
 }
 
 .swiper-pagination-bullets {
@@ -59,5 +61,5 @@
 .swiper-pagination-bullet-active {
   background-color: white;  
   opacity: 1; 
-  background-color: #00FFFF;
+  background-color: black;
 }

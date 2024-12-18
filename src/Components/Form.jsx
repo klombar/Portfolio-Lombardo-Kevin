@@ -32,8 +32,6 @@ function ContactForm() {
   return (
     <form onSubmit={handleSubmit}>
       <fieldset>
-        <legend>Envoyez-moi un message!</legend>
-        
         <div className="form_name_field">
           <label>Name</label>
           <input

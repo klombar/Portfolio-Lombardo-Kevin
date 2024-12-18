@@ -5,7 +5,7 @@ function Card({ image, name, age, location, className }) {
      <div className={className}>
        <img className="card_image" src={image} alt={name} />
        <div className="card_body">
-         <h2 className="card_name">{name}</h2>
+         <h3 className="card_name">{name}</h3>
          <p className="card_age">{age}</p>
          <p className="card_location">{location}</p>
        </div> 
