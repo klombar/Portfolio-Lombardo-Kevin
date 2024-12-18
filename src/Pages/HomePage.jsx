@@ -22,7 +22,7 @@ function HomePage() {
     <>
       <Main>
         
-        <section className='presentation' id='accueil'> 
+        <section className='presentation'> 
           <div className='presentation_title'>
             <h1 className='presentation_title_portfolio'>
               <span className='por'>Developper </span>
