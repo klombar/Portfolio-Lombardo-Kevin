@@ -27,6 +27,17 @@ function ContactForm() {
         e.target,
         "On6KrXoh5DxGaZsuf"
       )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setStatus("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" }); // Clear the form
+        },
+        (error) => {
+          console.error(error.text);
+          setStatus("Failed to send message. Please try again.");
+        }
+      );
   };
 
   return (
