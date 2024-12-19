@@ -19,6 +19,7 @@ function ContactForm() {
   };
 
   const handleSubmit = (e) => {
+    console.log("Form submitted"); 
     e.preventDefault();
     emailjs
       .sendForm(
@@ -78,7 +79,7 @@ function ContactForm() {
           />
         </div>
         
-        <Button classname="submit_button">
+        <Button type="submit" classname="submit_button">
           Send Message
         </Button>
         {status && <p>{status}</p>}
