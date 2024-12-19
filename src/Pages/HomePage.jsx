@@ -64,9 +64,7 @@ function HomePage() {
 
         <section className='projets' id='projets'>
           <h2 className='projets_title'>Projets</h2>
-          <div className='projets_container'>
             <Carrousel />
-          </div>
         </section>
 
         <Silverline />
