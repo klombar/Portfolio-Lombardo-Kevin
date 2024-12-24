@@ -10,6 +10,12 @@ function ContactForm() {
   });
   const [status, setStatus] = useState(null);
 
+  // Fonction de validation de l'email
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -19,8 +25,15 @@ function ContactForm() {
   };
 
   const handleSubmit = (e) => {
-    console.log("Form submitted"); 
     e.preventDefault();
+    
+    // Vérification de l'email avant soumettre
+    if (!validateEmail(formData.email)) {
+      setStatus("Please enter a valid email address.");
+      return;
+    }
+
+    console.log("Form submitted"); 
     emailjs
       .sendForm(
         "service_fdbwt7h", 
@@ -51,7 +64,7 @@ function ContactForm() {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Write your name"
+            placeholder="Nom"
             required
           />
         </div>
@@ -63,7 +76,7 @@ function ContactForm() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="example@example.com"
+            placeholder="exemple@exemple.com"
             required
           />
         </div>
@@ -74,7 +87,7 @@ function ContactForm() {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Write your message here"
+            placeholder="Ecrivez votre message ici !"
             required
           />
         </div>

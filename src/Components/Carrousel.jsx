@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectCreative } from 'swiper/modules';
 import Button from './Button';
 import ridingCities from '../Assets/Images/Image vitrine projet carrousel/riding cities.png'
-import booki from '../Assets/Images/Image vitrine projet carrousel/Booki.png'
+import booki from '../Assets/Images/Image vitrine projet carrousel/booki (1).png'
 import ohmyfood from '../Assets/Images/Image vitrine projet carrousel/Ohmyfood.png'
 import printIt from '../Assets/Images/Image vitrine projet carrousel/print it.png'
 import sophieBluel from '../Assets/Images/Image vitrine projet carrousel/Sophie Bluel.png'
@@ -19,7 +19,6 @@ import Overlay from './Overlay';
 const Carrousel = () => {
    return (
       <>
-      <div>
         <Swiper
           grabCursor={true}
           effect={'creative'}
@@ -34,9 +33,6 @@ const Carrousel = () => {
           }}
           loop={true}
           modules={[EffectCreative, Pagination]}
-          pagination={{ clickable: true,
-            type: 'bullets',
-           }}
           className="mySwiper3"
         >
           <SwiperSlide>
@@ -169,7 +165,6 @@ const Carrousel = () => {
             </Button>
           </SwiperSlide>
         </Swiper>
-        </div>
       </>
     );
   }

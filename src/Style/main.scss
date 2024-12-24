@@ -12,12 +12,15 @@
 @use 'components/form' as *;
 @use 'components/modal' as *;
 @use 'components/overlay' as *;
+@use 'components/competences' as *;
+@use 'components/presentation' as *;
 
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    scroll-behavior: smooth;
+   list-style: none;
 }
 
 #root{
@@ -35,9 +38,25 @@ a{
    text-decoration: none;
 }
 
-h2{
-   font-size: 50px;
+h1,h2,h3,h4,h5,h6{
    font-weight: bold;
    color: black;
-   font-family: "Dancing Script", serif;
 }
+
+html {
+   font-size: 16px; 
+ }
+ 
+ h1 {
+   font-size: 3.5rem; 
+   font-family: "Dancing Script", serif;
+ }
+ 
+ h2 {
+   font-size: 2.4rem; 
+   font-family: "Dancing Script", serif;
+ }
+ 
+ h3 { 
+   color: white;
+ }

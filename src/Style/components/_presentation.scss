@@ -1,0 +1,150 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 30px;
+  padding: 0 20px;
+
+  .presentation_title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &_portfolio {
+      font-family: "Dancing Script", serif;
+      font-size: 3.2rem;
+      font-weight: bold;
+      padding: 4px 19px;
+
+      @media screen and (max-width: 480px) {
+        font-size: 1.75rem;
+      }
+
+      @media screen and (min-width: 480px) and (max-width: 550px) {
+        font-size: 1.8rem;
+      }
+
+      @media screen and (min-width: 550px) and (max-width: 768px) {
+        font-size: 2.2rem;
+      }
+
+      .por {
+        color: rgb(22, 22, 22);
+        margin-right: 5px;
+      }
+
+      .tfo {
+        background: linear-gradient(45deg, black, rgb(177, 177, 177));
+        background-clip: padding-box;
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-right: 5px;
+      }
+
+      .lio {
+        color: rgb(117, 117, 117);
+      }
+    }
+  }
+
+  .presentation_container_card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1240px;
+    height: auto;
+    gap: 140px;
+
+    @media screen and (max-width: 550px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    @media screen and (min-width: 550px) and (max-width: 768px) {
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+      gap: 60px;
+      margin-top: 30px;
+    }
+
+    .presentation_container_card_img {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      border-radius: 25px;
+      overflow: hidden;
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      border: 1px solid rgb(255, 255, 255);
+
+      &:hover {
+        transform: translate3d(-10px, -10px, 0);
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.6);
+
+        @media screen and (max-width: 480px) {
+          transform: translate3d(-5px, -5px, 0);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+        }
+      }
+
+      @media screen and (min-width: 480px) and (max-width: 550px) {
+        width: 100%;
+
+        &:hover {
+          box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+  }
+
+  .presentation_container_description {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.3rem;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 1px solid lightgrey;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+
+    &:hover {
+      transform: translate3d(-10px, -10px, 0);
+      box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    @media screen and (max-width: 550px) {
+      font-size: 1rem;
+      padding: 20px;
+      max-width: 380px;
+
+      &:hover {
+        @media screen and (max-width: 480px) {
+          transform: translate3d(-5px, -5px, 0);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+
+    @media screen and (min-width: 550px) and (max-width: 768px) {
+      font-size: 0.8rem;
+      padding: 20px;
+
+      &:hover {
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 0.9rem;
+    }
+  }
+}
