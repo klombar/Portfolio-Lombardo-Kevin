@@ -647,7 +647,7 @@ form p {
 }
 @media screen and (max-width: 480px) {
   .presentation .presentation_title_portfolio {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 550px) {
