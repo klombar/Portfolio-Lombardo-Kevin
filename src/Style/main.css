@@ -187,7 +187,7 @@
 
 .card_body {
   font-family: "Roboto Slab", serif;
-  padding: 0 0 0 11px;
+  padding: 0 0 10px 11px;
 }
 
 .card_name {
@@ -297,7 +297,7 @@
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 0.8rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
@@ -347,7 +347,7 @@ form fieldset .form_textarea_field {
   gap: 10px;
   padding: 10px;
   border-radius: 5px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: black;
   background-color: #dfe4e7;
   border-radius: 10px;
