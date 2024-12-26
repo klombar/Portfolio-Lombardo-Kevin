@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCreative, Navigation } from 'swiper/modules';
+import { EffectCreative, Navigation, Autoplay } from 'swiper/modules';
 import {v4 as uuidv4} from 'uuid';
 import Button from './Button';
 import Overlay from './Overlay';
@@ -32,7 +32,11 @@ const Carrousel = () => {
         },
       }}
       loop={true}
-      modules={[EffectCreative, Navigation]}
+      modules={[EffectCreative, Navigation, Autoplay]}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
       navigation={{
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
