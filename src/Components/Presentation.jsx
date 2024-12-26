@@ -1,5 +1,5 @@
 import Card from './Card';
-import photoKevin from '../Assets/Images/Photos/photo kevin transparente.png';
+import photoKevin from '../Assets/Images/Photos/photo kevin transparente.webp';
 
 function Presentation () {
   return (

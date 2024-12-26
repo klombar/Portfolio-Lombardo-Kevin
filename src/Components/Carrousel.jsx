@@ -1,19 +1,19 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, EffectCreative } from 'swiper/modules';
+import { EffectCreative, Navigation } from 'swiper/modules';
 import Button from './Button';
-import ridingCities from '../Assets/Images/Image vitrine projet carrousel/riding cities.png'
-import booki from '../Assets/Images/Image vitrine projet carrousel/booki (1).png'
-import ohmyfood from '../Assets/Images/Image vitrine projet carrousel/Ohmyfood.png'
-import printIt from '../Assets/Images/Image vitrine projet carrousel/print it.png'
-import sophieBluel from '../Assets/Images/Image vitrine projet carrousel/Sophie Bluel.png'
-import kasa from '../Assets/Images/Image vitrine projet carrousel/Kasa.png'
-import ninaCarducci from '../Assets/Images/Image vitrine projet carrousel/Nina Carducci Photographie.png'
-import events724 from '../Assets/Images/Image vitrine projet carrousel/724events.png'
-import argentbank from '../Assets/Images/Image vitrine projet carrousel/Argentbank.png'
-import qwenta from '../Assets/Images/Image vitrine projet carrousel/qwenta.png'
+import ridingCities from '../Assets/Images/Image vitrine projet carrousel/riding cities.webp'
+import booki from '../Assets/Images/Image vitrine projet carrousel/booki (1).webp'
+import ohmyfood from '../Assets/Images/Image vitrine projet carrousel/Ohmyfood.webp'
+import printIt from '../Assets/Images/Image vitrine projet carrousel/print it.webp'
+import sophieBluel from '../Assets/Images/Image vitrine projet carrousel/Sophie Bluel.webp'
+import kasa from '../Assets/Images/Image vitrine projet carrousel/Kasa.webp'
+import ninaCarducci from '../Assets/Images/Image vitrine projet carrousel/Nina Carducci Photographie.webp'
+import events724 from '../Assets/Images/Image vitrine projet carrousel/724events.webp'
+import argentbank from '../Assets/Images/Image vitrine projet carrousel/Argentbank.webp'
+import qwenta from '../Assets/Images/Image vitrine projet carrousel/qwenta.webp'
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/effect-creative';
+import 'swiper/css/navigation';
 import Overlay from './Overlay';
 
 const Carrousel = () => {
@@ -32,14 +32,18 @@ const Carrousel = () => {
             },
           }}
           loop={true}
-          modules={[EffectCreative, Pagination]}
+          modules={[EffectCreative, Navigation]}
+          navigation={{
+            nextEl: '.swiper-button-next', // Sélecteur pour la flèche "suivante"
+            prevEl: '.swiper-button-prev', // Sélecteur pour la flèche "précédente"
+          }}
           className="mySwiper3"
         >
           <SwiperSlide>
             <div className='image-overlay'>
             <img src={ridingCities} alt="riding cities" />
             <Overlay>
-              <h3>Riding Cities &apos;:</h3>
+              <h3>Riding Cities :</h3>
               <p>Vous êtes stagiaire développeur junior chez Webonzaï. Votre mission est de mettre à jour la page de Riding Cities, une association de skate, en ajoutant une section sur les membres fondateurs et en modifiant la section des plannings de cours pour inclure deux boutons (enfants/adultes). Le code HTML est à adapter, et le CSS est déjà prêt.</p>
             </Overlay>
             </div>
@@ -65,7 +69,7 @@ const Carrousel = () => {
           <div className='image-overlay'>
             <img src={ohmyfood} alt="riding cities" />
             <Overlay>
-              <h3>Oh my food</h3>
+              <h3>Oh my food :</h3>
               <p>Vous rejoignez Ohmyfood en tant que développeur junior pour développer un site &quot;mobile first&quot; répertoriant les menus de restaurants gastronomiques. Les clients pourront composer leur repas à l’avance pour éviter les temps d&apos;attente. Vous devez intégrer les maquettes mobile et desktop fournies par l&apos;UX designer et respecter les spécifications du brief créatif. Le site doit être responsive, et vous utiliserez SASS pour organiser le CSS et intégrer des animations.</p>
             </Overlay>
             </div>
@@ -91,7 +95,7 @@ const Carrousel = () => {
           <div className='image-overlay'>
             <img src={sophieBluel} alt="riding cities" />
             <Overlay>
-              <h3>Sophie Bluel</h3>
+              <h3>Sophie Bluel :</h3>
               <p>En tant que développeur front-end pour l’agence ArchiWebos, vous rejoignez une équipe en renfort pour concevoir le site portfolio d&apos;une architecte d’intérieur. Votre mission consiste à développer la page de présentation des travaux, la page de connexion administrateur et une modale pour uploader des médias. Vous travaillez avec le design Figma, le code back-end et le code front-end existants, tout en suivant les tâches définies dans le Kanban.</p>
             </Overlay>
             </div>
@@ -164,6 +168,8 @@ const Carrousel = () => {
                Lien Github
             </Button>
           </SwiperSlide>
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
         </Swiper>
       </>
     );

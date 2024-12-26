@@ -1,5 +1,5 @@
-import Header from './Components/Layout/Header';
-import Footer from './Components/Layout/Footer';
+import Header from './Components/Layout/Header/Header.jsx';
+import Footer from './Components/Layout/Footer/Footer.jsx';
 import HomePage from './Pages/HomePage.jsx';
 import '../src/Style/main.scss';
 

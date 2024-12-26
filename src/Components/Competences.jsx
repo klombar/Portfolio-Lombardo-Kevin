@@ -28,24 +28,24 @@ function Competence() {
                     Competences :
                   </h3>
                   <div className='competences_logo_container_competences_logo'>
-                    <Logo className='competences_logo_container_css' src={css}/>
-                    <Logo className='competences_logo_container_sass' src={sass}/>
-                    <Logo className='competences_logo_container_javascript' src={javascript}/>
-                    <Logo className='competences_logo_container_react' src={react}/>
-                    <Logo className='competences_logo_container_redux' src={redux}/>
-                    <Logo className='competences_logo_container_html' src={html}/>
+                    <Logo className='competences_logo_container_css' src={css} alt='logo css'/>
+                    <Logo className='competences_logo_container_sass' src={sass} alt='logo sass'/>
+                    <Logo className='competences_logo_container_javascript' src={javascript} alt='logo javascript'/>
+                    <Logo className='competences_logo_container_react' src={react} alt='logo react'/>
+                    <Logo className='competences_logo_container_redux' src={redux} alt='logo redux'/>
+                    <Logo className='competences_logo_container_html' src={html} alt='logo html'/>
                   </div>
                 </div>
 
                 <div className='competences_logo_container_outils'>
                   <h3 className='competences_logo_container_outils_title'>Outils :</h3>
                   <div className='competences_logo_container_outils_logo'>
-                    <Logo className='competences_logo_container_git' src={git}/>
-                    <Logo className='competences_logo_container_github' src={github}/>
-                    <Logo className='competences_logo_container_api' src={api}/>
-                    <Logo className='competences_logo_container_notion' src={notion}/>
-                    <Logo className='competences_logo_container_feedly' src={feedly}/>
-                    <Logo className='competences_logo_container_jest' src={jest}/>
+                    <Logo className='competences_logo_container_git' src={git} alt='logo git'/>
+                    <Logo className='competences_logo_container_github' src={github} alt='logo github'/>
+                    <Logo className='competences_logo_container_api' src={api} alt='logo api'/>
+                    <Logo className='competences_logo_container_notion' src={notion} alt='logo notion'/>
+                    <Logo className='competences_logo_container_feedly' src={feedly} alt='logo feedly'/>
+                    <Logo className='competences_logo_container_jest' src={jest} alt='logo jest'/>
                   </div>
                 </div>
 
@@ -55,31 +55,31 @@ function Competence() {
                   <h3 className='competences_logo_container_connaissances_title'>Connaissances :</h3>
                   <div className='competences_logo_container_connaissances_container'>
                     <div className='competences_logo_container_connaissances_container_connaissance'>
-                      <Logo className='competences_logo_container_jest' src={tick}/> 
+                      <Logo className='competences_logo_container_jest' src={tick} alt='logo représentant une case coché'/> 
                       Clean code
                     </div>
                     <div className='competences_logo_container_connaissances_container_connaissance'>
-                      <Logo className='competences_logo_container_jest' src={tick}/> 
+                      <Logo className='competences_logo_container_jest' src={tick} alt='logo représentant une case coché'/> 
                       Optimisation des performances
                     </div>
                     <div className='competences_logo_container_connaissances_container_connaissance'>
-                      <Logo className='competences_logo_container_jest' src={tick}/> 
+                      <Logo className='competences_logo_container_jest' src={tick} alt='logo représentant une case coché'/> 
                       Bonne pratique SEO
                     </div>
                     <div className='competences_logo_container_connaissances_container_connaissance'>
-                      <Logo className='competences_logo_container_jest' src={tick}/> 
+                      <Logo className='competences_logo_container_jest' src={tick} alt='logo représentant une case coché'/> 
                       Tests unitaires
                     </div>
                     <div className='competences_logo_container_connaissances_container_connaissance'>
-                      <Logo className='competences_logo_container_jest' src={tick}/> 
+                      <Logo className='competences_logo_container_jest' src={tick} alt='logo représentant une case coché'/> 
                       Methode Agile
                     </div>
                     <div className='competences_logo_container_connaissances_container_connaissance'>
-                      <Logo className='competences_logo_container_jest' src={tick}/> 
+                      <Logo className='competences_logo_container_jest' src={tick} alt='logo représentant une case coché'/> 
                       UI / UX
                     </div>
                     <div className='competences_logo_container_connaissances_container_connaissance'>
-                      <Logo className='competences_logo_container_jest' src={tick}/> 
+                      <Logo className='competences_logo_container_jest' src={tick} alt='logo représentant une case coché'/> 
                       Responsive web design
                     </div>
                   </div>

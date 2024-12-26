@@ -7,6 +7,10 @@ function Footer() {
         <a href="mailto:votre.kevinlombardo30@gmail.com">Email</a>
       </div>
       <p>HTML | CSS | JavaScript | React </p>
+      <div className="footer_legal">
+        <a href="privacy policy portfolio kevin.html" target="blank">Politique de confidentialité</a>
+        <a href="Vos Mentions Légales_2801.pdf" target="blank">Mentions légales</a>
+      </div>
       <p>&copy; 2024 LOMBARDO Kevin - Développeur Web Junior</p>
     </footer>
   )

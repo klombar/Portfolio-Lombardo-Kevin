@@ -3,7 +3,7 @@ import proptypes from 'prop-types';
 function Card({ image, name, age, location, className }) {
    return (
      <div className={className}>
-       <img className="card_image" src={image} alt={name} />
+       <img className="card_image" src={image} alt="Photo portrait de Lombardo Kevin" loading="eager"/>
        <div className="card_body">
          <h3 className="card_name">{name}</h3>
          <p className="card_age">{age}</p>

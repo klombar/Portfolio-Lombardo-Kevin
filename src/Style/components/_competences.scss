@@ -3,9 +3,10 @@
   flex-direction: column;
   width: 100%;
   max-width: 1240px;
-  gap: 30px;
-  margin-top: 30px;
-  @media screen and (max-width: 480px) {
+  margin-top: 50px;
+  gap: 50px;
+  
+  @media screen and (max-width: 1240px) {
     padding: 0 20px;
   }
 
@@ -14,16 +15,17 @@
     justify-content: center;
 
     .competences_title_container_developpeur {
+      width: 100%;
+      text-align: center;
+      font-family: "Dancing Script", serif;
+      font-size: 3rem;
+      font-weight: bold;
       @media screen and (max-width: 480px) {
-        font-size: 2.4rem;
+        font-size: 2.6rem;
       }
 
-      @media screen and (min-width: 480px) and (max-width: 550px) {
-        font-size: 1.6rem;
-      }
-
-      @media screen and (min-width: 550px) and (max-width: 768px) {
-        font-size: 2rem;
+      @media screen and (min-width: 480px) {
+        font-size: 3rem;
       }
     }
   }

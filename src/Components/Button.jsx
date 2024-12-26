@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 function Button({ children, onClick, link, classname, type }) {
-  // Si un lien est passé, on retourne une balise <a>
+
   if (link) {
     return (
       <a href={link} target="_blank" className={classname} rel="noopener noreferrer">
@@ -10,7 +10,7 @@ function Button({ children, onClick, link, classname, type }) {
     );
   }
 
-  // Sinon, on garde le comportement classique du bouton
+
   return (
     <button type={type} onClick={onClick} className={classname}>
       {children}
@@ -21,9 +21,9 @@ function Button({ children, onClick, link, classname, type }) {
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func,
-  link: PropTypes.string, // Le lien GitHub
+  link: PropTypes.string, 
   classname: PropTypes.string.isRequired,
-  type: PropTypes.string, // Type du bouton, ex. "submit" ou "button"
+  type: PropTypes.string, 
 };
 
 export default Button;

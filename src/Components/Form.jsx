@@ -10,7 +10,6 @@ function ContactForm() {
   });
   const [status, setStatus] = useState(null);
 
-  // Fonction de validation de l'email
   const validateEmail = (email) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRegex.test(email);
@@ -27,7 +26,7 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Vérification de l'email avant soumettre
+
     if (!validateEmail(formData.email)) {
       setStatus("Please enter a valid email address.");
       return;
@@ -45,7 +44,7 @@ function ContactForm() {
         (result) => {
           console.log(result.text);
           setStatus("Message sent successfully!");
-          setFormData({ name: "", email: "", message: "" }); // Clear the form
+          setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
           console.error(error.text);
@@ -58,8 +57,9 @@ function ContactForm() {
     <form onSubmit={handleSubmit}>
       <fieldset>
         <div className="form_name_field">
-          <label>Name</label>
+        <label htmlFor="name">Name</label>
           <input
+            id="name"
             type="text"
             name="name"
             value={formData.name}
@@ -70,8 +70,9 @@ function ContactForm() {
         </div>
         
         <div className="form_email_field">
-          <label>Email</label>
+        <label htmlFor="email">Email</label>
           <input
+            id="email"
             type="email"
             name="email"
             value={formData.email}
@@ -82,8 +83,9 @@ function ContactForm() {
         </div>
         
         <div className="form_textarea_field">
-          <label>Message</label>
+        <label htmlFor="message">Message</label>
           <textarea
+            id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}

@@ -1,4 +1,4 @@
-import Main from '../Components/Layout/Main.jsx';
+import Main from '../Components/Layout/Main/Main.jsx';
 import Carrousel from '../Components/Carrousel.jsx';
 import Form from '../Components/Form.jsx';
 import Competences from '../Components/Competences.jsx';

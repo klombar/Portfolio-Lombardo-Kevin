@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 1240px;
   height: 100%;
 }
 
@@ -47,25 +48,55 @@
   background-color: #dfe4e7;
 }
 
-.swiper-pagination-bullets {
+.image-overlay{
+  position: relative;
+}
+
+/* Flèches de navigation positionnées à l'intérieur de l'image */
+.swiper-button-next,
+.swiper-button-prev {
   position: absolute;
-  bottom: 50px!important;
-  text-align: center;
-  width: 20%;
+  top: 40%; /* Centré verticalement */
+  color: white; /* Couleur des flèches */
+  border-radius: 50%; /* Flèches rondes */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Assurez-vous que les flèches sont au-dessus des autres éléments */
+  @media screen and (min-width: 550px) and (max-width: 768px){
+    width: 50px;
+    height: 50px;
+  }
+  @media screen and (min-width: 769px){
+    width: 60px;
+    height: 60px;
+  }
+  &::after {
+    font-size: 2rem; /* Taille de la flèche */
+    @media screen and (min-width: 550px) and (max-width: 768px){
+      font-size: 2.5rem;
+    }
+    @media screen and (min-width: 769px){
+      font-size: 3.5rem;
+    }
+  }
 }
 
-.swiper-pagination-bullet {
-  width: 10px;  
-  height: 10px; 
-  margin: 0 4px; 
-  background-color: rgb(112, 112, 112); 
-  border-radius: 50%;
-  opacity: 0.7; 
-  transition: background-color 0.3s ease, opacity 0.3s ease;
+/* Position de la flèche "précédente" à gauche */
+.swiper-button-prev {
+  left: 7px;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: white;  
-  opacity: 1; 
-  background-color: black;
+/* Position de la flèche "suivante" à droite */
+.swiper-button-next {
+  right: 7px;
+}
+
+/* Effet de survol des flèches */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Couleur au survol */
 }
