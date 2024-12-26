@@ -36,6 +36,7 @@ const Carrousel = () => {
       autoplay={{
         delay: 5000,
         disableOnInteraction: true,
+        pauseOnMouseEnter: true,
       }}
       navigation={{
         nextEl: '.swiper-button-next',
