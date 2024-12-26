@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   display: flex;
   justify-content: space-between;
@@ -71,9 +72,20 @@
   gap: 20px;
   padding: 0 20px;
 }
+@media screen and (max-width: 768px) {
+  .projets {
+    gap: 35px;
+    margin-top: 50px;
+  }
+}
 .projets_title {
   display: flex;
   justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-family: "Dancing Script", serif;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .contact {
@@ -82,8 +94,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 30px;
-  margin-top: 30px;
+  gap: 50px;
+  margin-top: 50px;
   padding-bottom: 20px;
   font-family: "Roboto", sans-serif;
   color: white;
@@ -92,6 +104,11 @@
 .contact_title {
   color: white;
   margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  font-family: "Dancing Script", serif;
+  font-size: 3rem;
+  font-weight: bold;
 }
 .contact_formContainer {
   display: flex;
@@ -188,6 +205,7 @@
 .card_body {
   font-family: "Roboto Slab", serif;
   padding: 0 0 10px 11px;
+  background-color: white;
 }
 
 .card_name {
@@ -200,6 +218,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 1240px;
   height: 100%;
 }
 
@@ -249,27 +268,70 @@
   background-color: #dfe4e7;
 }
 
-.swiper-pagination-bullets {
+.image-overlay {
+  position: relative;
+}
+
+/* Flèches de navigation positionnées à l'intérieur de l'image */
+.swiper-button-next,
+.swiper-button-prev {
   position: absolute;
-  bottom: 50px !important;
-  text-align: center;
-  width: 20%;
+  top: 40%; /* Centré verticalement */
+  color: white; /* Couleur des flèches */
+  border-radius: 50%; /* Flèches rondes */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Assurez-vous que les flèches sont au-dessus des autres éléments */
+}
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 60px;
+    height: 60px;
+  }
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem; /* Taille de la flèche */
+}
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 3.5rem;
+  }
 }
 
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  margin: 0 4px;
-  background-color: rgb(112, 112, 112);
-  border-radius: 50%;
-  opacity: 0.7;
-  transition: background-color 0.3s ease, opacity 0.3s ease;
+/* Position de la flèche "précédente" à gauche */
+.swiper-button-prev {
+  left: 7px;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: white;
-  opacity: 1;
-  background-color: black;
+/* Position de la flèche "suivante" à droite */
+.swiper-button-next {
+  right: 7px;
+}
+
+/* Effet de survol des flèches */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Couleur au survol */
 }
 
 .carrousel_link_button {
@@ -297,7 +359,7 @@
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
@@ -410,16 +472,17 @@ form p {
   left: -100%;
   width: 100%;
   height: 20%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
   background-color: white;
   opacity: 0;
   z-index: 1;
   transition: left 0.3s ease, opacity 0.3s ease;
   border-bottom: 1px solid black;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .overlay {
     height: 30%;
+    border-radius: 10px 10px 0px 0px;
   }
 }
 .overlay h3 {
@@ -430,14 +493,20 @@ form p {
     font-size: 0.5rem;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 550px) {
+@media screen and (min-width: 481px) {
   .overlay h3 {
     font-size: 0.7rem;
   }
 }
-@media screen and (min-width: 551px) and (max-width: 768px) {
+@media screen and (min-width: 551px) {
   .overlay h3 {
-    font-size: 0.4rem;
+    font-size: 1rem;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .overlay h3 {
+    font-size: 1.2rem;
   }
 }
 .overlay p {
@@ -450,14 +519,19 @@ form p {
     font-size: 0.43rem;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 550px) {
-  .overlay p {
-    font-size: 0.45rem;
-  }
-}
-@media screen and (min-width: 551px) and (max-width: 768px) {
+@media screen and (min-width: 481px) {
   .overlay p {
     font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay p {
+    font-size: 0.74rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .overlay p {
+    font-size: 0.85rem;
   }
 }
 
@@ -496,10 +570,10 @@ form p {
   flex-direction: column;
   width: 100%;
   max-width: 1240px;
-  gap: 30px;
-  margin-top: 30px;
+  margin-top: 50px;
+  gap: 50px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1240px) {
   .competences {
     padding: 0 20px;
   }
@@ -508,19 +582,21 @@ form p {
   display: flex;
   justify-content: center;
 }
+.competences .competences_title_container .competences_title_container_developpeur {
+  width: 100%;
+  text-align: center;
+  font-family: "Dancing Script", serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
 @media screen and (max-width: 480px) {
   .competences .competences_title_container .competences_title_container_developpeur {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 550px) {
+@media screen and (min-width: 480px) {
   .competences .competences_title_container .competences_title_container_developpeur {
-    font-size: 1.6rem;
-  }
-}
-@media screen and (min-width: 550px) and (max-width: 768px) {
-  .competences .competences_title_container .competences_title_container_developpeur {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 .competences .competences_logo_container {
@@ -630,8 +706,8 @@ form p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30px;
-  gap: 30px;
+  margin-top: 50px;
+  gap: 50px;
   padding: 0 20px;
 }
 .presentation .presentation_title {
@@ -640,24 +716,25 @@ form p {
   width: 100%;
 }
 .presentation .presentation_title_portfolio {
+  width: 100%;
+  text-align: center;
   font-family: "Dancing Script", serif;
   font-size: 3.2rem;
   font-weight: bold;
-  padding: 4px 19px;
 }
 @media screen and (max-width: 480px) {
   .presentation .presentation_title_portfolio {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 550px) {
   .presentation .presentation_title_portfolio {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 550px) and (max-width: 768px) {
   .presentation .presentation_title_portfolio {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
 }
 .presentation .presentation_title_portfolio .por {

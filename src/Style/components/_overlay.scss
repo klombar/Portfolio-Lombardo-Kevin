@@ -23,12 +23,15 @@
       @media screen and (max-width: 480px){
          font-size: 0.5rem;
       }
-      @media screen and (min-width: 481px) and (max-width: 550px){
+      @media screen and (min-width: 481px){
          font-size: 0.7rem;  
       }
-      @media screen and (min-width: 551px) and (max-width: 768px){
+      @media screen and (min-width: 551px){
          font-size: 1rem;  
          border-radius: 10px 10px 0px 0px;
+      }
+      @media screen and (min-width: 900px){
+         font-size: 1.2rem;
       }
    }
    & p{
@@ -42,7 +45,10 @@
          font-size: 0.60rem;  
       }
       @media screen and (min-width: 768px){
-         font-size: 0.75rem;  
+         font-size: 0.74rem;  
+      }
+      @media screen and (min-width: 900px){
+         font-size: 0.85rem;
       }
    }
 }
