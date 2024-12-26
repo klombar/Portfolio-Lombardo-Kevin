@@ -1,69 +1,69 @@
 [
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/riding cities.webp",
+     "image": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/riding%20cities.webp",
      "alt": "Image vitrine du projet riding cities",
      "title": "Riding Cities :",
      "description": "Vous êtes stagiaire développeur junior chez Webonzaï. Votre mission est de mettre à jour la page de Riding Cities, une association de skate, en ajoutant une section sur les membres fondateurs et en modifiant la section des plannings de cours pour inclure deux boutons (enfants/adultes). Le code HTML est à adapter, et le CSS est déjà prêt.",
      "link": "https://github.com/klombar/Projet-Riding-Cities"
    },
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/booki (1).webp",
+     "image": "https://github.com/klombar/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/booki (1).webp",
      "alt": "Image vitrine du projet booki",
      "title": "Booki :",
      "description": "Vous commencez votre alternance chez Booki en tant que développeur web. Votre mission est d’intégrer l’interface du site avec HTML et CSS, en vous basant sur la maquette fournie par Loïc, l’UI designer, et les instructions de Sarah, la CTO. Vous devez compléter la base de code et respecter les spécifications techniques pour créer le site.",
      "link": "https://github.com/klombar/Projet-Booki"
    },
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/ohmyfood.webp",
+     "image": "https://github.com/klombar/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/ohmyfood.webp",
      "alt": "Image vitrine du projet ohmyfood",
      "title": "Oh my food :",
      "description": "Vous rejoignez Ohmyfood en tant que développeur junior pour développer un site \"mobile first\" répertoriant les menus de restaurants gastronomiques. Les clients pourront composer leur repas à l’avance pour éviter les temps d'attente. Vous devez intégrer les maquettes mobile et desktop fournies par l'UX designer et respecter les spécifications du brief créatif. Le site doit être responsive, et vous utiliserez SASS pour organiser le CSS et intégrer des animations.",
      "link": "https://github.com/klombar/Projet-OhMyFood-Openclassrooms"
    },
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/print it.webp",
+     "image": "https://github.com/klombar/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/print it.webp",
      "alt": "Image vitrine du projet print it",
      "title": "Print it :",
      "description": "En tant que développeur front-end freelance, vous êtes chargé de dynamiser le site d'une imprimerie familiale, Print it. Votre première mission consiste à créer un carrousel pour le site, en suivant les instructions détaillées fournies par Lucien, le directeur.",
      "link": "https://github.com/klombar/Projet-Print_it-OpenClassRooms"
    },
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/Sophie Bluel.webp",
+     "image": "https://github.com/klombar/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/Sophie Bluel.webp",
      "alt": "Image vitrine du projet sophie bluel",
      "title": "Sophie Bluel :",
      "description": "En tant que développeur front-end pour l’agence ArchiWebos, vous rejoignez une équipe en renfort pour concevoir le site portfolio d'une architecte d’intérieur. Votre mission consiste à développer la page de présentation des travaux, la page de connexion administrateur et une modale pour uploader des médias. Vous travaillez avec le design Figma, le code back-end et le code front-end existants, tout en suivant les tâches définies dans le Kanban.",
      "link": "https://github.com/klombar/Projet-ArchiWebos-Sophie-Bluel"
    },
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/Kasa.webp",
+     "image": "https://github.com/klombar/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/Kasa.webp",
      "alt": "Image vitrine du projet kasa",
      "title": "Kasa :",
      "description": "En tant que développeur front-end freelance pour Kasa, vous devez refondre le site en React, en intégrant des composants et des routes React Router. Vous suivez les maquettes Figma responsives et implémentez des fonctionnalités comme une galerie d'images interactive et des menus déroulants animés. Le back-end n'est pas encore disponible, donc vous travaillez avec un fichier JSON contenant les 20 dernières annonces.",
      "link": "https://github.com/klombar/Projet-Kasa"
    },
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/Nina Carducci Photographie.webp",
+     "image": "https://github.com/klombar/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/Nina Carducci Photographie.webp",
      "alt": "Image vitrine du projet nina carducci",
      "title": "Nina Carducci :",
      "description": "En tant que développeur freelance, vous proposez vos services d'optimisation SEO à Nina Carducci, une photographe, pour améliorer la vitesse et la visibilité de son site. Vous lui proposez de corriger les problèmes d'images lourdes et d'optimiser le code du site. En retour, vous livrerez un rapport détaillant les améliorations et les résultats obtenus grâce à des audits de performance et d'accessibilité.",
      "link": "https://github.com/klombar/Projet-Nina-Carducci"
    },
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/724events.webp",
+     "image": "https://github.com/klombar/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/724events.webp",
      "alt": "Image vitrine du projet 724 events",
      "title": "724 Events :",
      "description": "Vous êtes développeur front-end freelance et l'agence événementielle 724events vous contacte pour finaliser son site vitrine one-page. Le site est fonctionnel mais présente quelques bugs qui doivent être corrigés. Jean-Baptiste, le directeur Marketing, vous envoie le code du site ainsi qu'un cahier de recette à compléter pour s'assurer que tous les problèmes sont résolus. Vous devez rapidement déboguer et tester le site afin de le rendre pleinement opérationnel.",
      "link": "https://github.com/klombar/Projet-724events"
    },
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/Argentbank.webp",
+     "image": "https://github.com/klombar/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/Argentbank.webp",
      "alt": "Image vitrine du projet argentbank",
      "title": "ArgentBank :",
      "description": "Vous avez rejoint Argent Bank en tant que développeur front-end pour la création d'un tableau de bord utilisateurs. Vous travaillez avec Mila sur l'authentification des utilisateurs : création d'une application React responsive pour la gestion des connexions, la consultation des profils et l'utilisation de Redux pour l'état. Vous suivez les bonnes pratiques de Green Code en optimisant les images et en créant des composants réutilisables.",
      "link": "https://github.com/klombar/Projet-Argentbank"
    },
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/qwenta.webp",
+     "image": "https://github.com/klombar/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/qwenta.webp",
      "alt": "Image vitrine du projet qwenta",
      "title": "Qwenta :",
      "description": "Vous êtes développeur front-end chez Webgencia et devez préparer le projet \"Menu Maker\" pour Qwenta. En l'absence du Product Owner, Soufiane, vous rédigez un document de spécifications techniques et créez un tableau Kanban pour suivre les tâches. Vous organisez également une veille sur des technologies clés. Enfin, vous préparez une présentation pour Soufiane avant sa réunion avec le client.",
