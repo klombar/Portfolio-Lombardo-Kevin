@@ -14,7 +14,7 @@
      "link": "https://github.com/klombar/Projet-Booki"
    },
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/ohmyfood.webp",
+     "image": "https://github.com/klombar/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/ohmyfood.webp",
      "alt": "Image vitrine du projet ohmyfood",
      "title": "Oh my food :",
      "description": "Vous rejoignez Ohmyfood en tant que développeur junior pour développer un site \"mobile first\" répertoriant les menus de restaurants gastronomiques. Les clients pourront composer leur repas à l’avance pour éviter les temps d'attente. Vous devez intégrer les maquettes mobile et desktop fournies par l'UX designer et respecter les spécifications du brief créatif. Le site doit être responsive, et vous utiliserez SASS pour organiser le CSS et intégrer des animations.",
