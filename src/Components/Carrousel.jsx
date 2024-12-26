@@ -35,7 +35,7 @@ const Carrousel = () => {
       modules={[EffectCreative, Navigation, Autoplay]}
       autoplay={{
         delay: 5000,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
       }}
       navigation={{
         nextEl: '.swiper-button-next',
