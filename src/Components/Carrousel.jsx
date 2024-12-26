@@ -34,7 +34,7 @@ const Carrousel = () => {
       loop={true}
       modules={[EffectCreative, Navigation, Autoplay]}
       autoplay={{
-        delay: 5000,
+        delay: 8000,
         disableOnInteraction: true,
         pauseOnMouseEnter: true,
       }}
