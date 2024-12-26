@@ -1,6 +1,6 @@
 [
    {
-     "image": "/Portfolio-Lombardo-Kevin/src/assets/Images/Image vitrine projet carrousel/riding cities.webp",
+     "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/riding%20cities.webp",
      "alt": "Image vitrine du projet riding cities",
      "title": "Riding Cities :",
      "description": "Vous êtes stagiaire développeur junior chez Webonzaï. Votre mission est de mettre à jour la page de Riding Cities, une association de skate, en ajoutant une section sur les membres fondateurs et en modifiant la section des plannings de cours pour inclure deux boutons (enfants/adultes). Le code HTML est à adapter, et le CSS est déjà prêt.",
