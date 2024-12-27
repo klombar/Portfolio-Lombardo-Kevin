@@ -1,0 +1,29 @@
+{
+   "competences": [
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20HTML.png", "alt": "logo HTML", "className": "competences_logo_container_html" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20CSS.png", "alt": "logo CSS", "className": "competences_logo_container_css" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20SASS.png", "alt": "logo SASS", "className": "competences_logo_container_sass" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20javascript.png", "alt": "logo Javascript", "className": "competences_logo_container_javascript" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20react.png", "alt": "logo React", "className": "competences_logo_container_react" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20redux.png", "alt": "logo Redux", "className": "competences_logo_container_redux" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/figma.png", "alt": "logo Figma", "className": "competences_logo_container_figma" }
+   ],
+   "outils": [
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20Git.png", "alt": "logo Git", "className": "competences_logo_container_git" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20Github.png", "alt": "logo GitHub", "className": "competences_logo_container_github" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20API.png", "alt": "logo API", "className": "competences_logo_container_api" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20notion.png", "alt": "logo Notion", "className": "competences_logo_container_notion" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/jest.png", "alt": "logo Jest", "className": "competences_logo_container_jest" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20feedly.png", "alt": "logo Feedly", "className": "competences_logo_container_feedly" }
+   ],
+   "connaissances": [
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/tick.png", "alt": "logo tick", "className": "competences_logo_container_tick", "text": "Clean code" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/tick.png", "alt": "logo tick", "className": "competences_logo_container_tick", "text": "Optimisation des performances" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/tick.png", "alt": "logo tick", "className": "competences_logo_container_tick", "text": "Bonne pratique SEO" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/tick.png", "alt": "logo tick", "className": "competences_logo_container_tick", "text": "Tests unitaires" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/tick.png", "alt": "logo tick", "className": "competences_logo_container_tick", "text": "Méthode Agile" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/tick.png", "alt": "logo tick", "className": "competences_logo_container_tick", "text": "UI / UX" },
+     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/tick.png", "alt": "logo tick", "className": "competences_logo_container_tick", "text": "Responsive web design" }
+   ]
+ }
+ 

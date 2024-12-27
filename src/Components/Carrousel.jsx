@@ -12,7 +12,7 @@ const Carrousel = () => {
   const [slides, setSlides] = useState([]);
 
   useEffect(() => {
-    fetch('carrouselData.json')
+    fetch('/carrouselData.json')
       .then(response => response.json())
       .then(data => setSlides(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -34,14 +34,17 @@ const Carrousel = () => {
       loop={true}
       modules={[EffectCreative, Navigation, Autoplay]}
       autoplay={{
-        delay: 8000,
+        delay: 6000,
         disableOnInteraction: true,
         pauseOnMouseEnter: true,
       }}
+      speed={1200}
       navigation={{
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       }}
+      slidesPerView={1} // Ajustez ce paramètre
+      slidesPerGroup={1} // Ajustez ce paramètre
       className="mySwiper3"
     >
       {slides.map((slide) => (
