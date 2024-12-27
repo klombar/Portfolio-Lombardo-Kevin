@@ -12,7 +12,7 @@ const Carrousel = () => {
   const [slides, setSlides] = useState([]);
 
   useEffect(() => {
-    fetch('/carrouselData.json')
+    fetch('/Portfolio-Lombardo-Kevin/carrouselData.json')
       .then(response => response.json())
       .then(data => setSlides(data))
       .catch(error => console.error('Error fetching data:', error));

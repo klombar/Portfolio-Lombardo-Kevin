@@ -5,7 +5,7 @@ const Competence = () => {
   const [logosData, setLogosData] = useState(null);
 
   useEffect(() => {
-    fetch('/competencesData.json')
+    fetch('/Portfolio-Lombardo-Kevin/competencesData.json')
       .then((response) => response.json())
       .then((data) => setLogosData(data))
       .catch((error) => console.error('Erreur lors du chargement des logos:', error));
