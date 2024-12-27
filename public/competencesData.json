@@ -1,6 +1,6 @@
 {
    "competences": [
-     { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20HTML.png", "alt": "logo HTML", "className": "competences_logo_container_html" },
+     { "src": "../src/assets/Images/Logo/logo HTML.png", "alt": "logo HTML", "className": "competences_logo_container_html" },
      { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20CSS.png", "alt": "logo CSS", "className": "competences_logo_container_css" },
      { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20SASS.png", "alt": "logo SASS", "className": "competences_logo_container_sass" },
      { "src": "https://github.com/klombar/Portfolio-Lombardo-Kevin/blob/main/src/assets/Images/Logo/logo%20javascript.png", "alt": "logo Javascript", "className": "competences_logo_container_javascript" },
