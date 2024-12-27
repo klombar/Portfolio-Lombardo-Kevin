@@ -5,7 +5,7 @@
      { "src": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Logo/logo%20SASS.png", "alt": "logo SASS", "className": "competences_logo_container_sass" },
      { "src": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Logo/logo%20javascript.png", "alt": "logo Javascript", "className": "competences_logo_container_javascript" },
      { "src": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Logo/logo%20react.png", "alt": "logo React", "className": "competences_logo_container_react" },
-     { "src": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Logo/logo%20redux.png", "alt": "logo Redux", "className": "competences_logo_container_redux" },
+     { "src": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Logo/logo%20Redux.png", "alt": "logo Redux", "className": "competences_logo_container_redux" },
      { "src": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Logo/figma.png", "alt": "logo Figma", "className": "competences_logo_container_figma" }
    ],
    "outils": [
