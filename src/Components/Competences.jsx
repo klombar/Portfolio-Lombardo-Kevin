@@ -2,18 +2,15 @@ import { useState, useEffect } from 'react';
 import Logo from './Logo';
 
 const Competence = () => {
-  // États pour stocker les logos
   const [logosData, setLogosData] = useState(null);
 
   useEffect(() => {
-    // Chargement du fichier JSON contenant les logos
     fetch('/competencesData.json')
       .then((response) => response.json())
       .then((data) => setLogosData(data))
       .catch((error) => console.error('Erreur lors du chargement des logos:', error));
   }, []);
 
-  // Si les données ne sont pas encore chargées, afficher un message de chargement
   if (!logosData) {
     return <p>Chargement des logos...</p>;
   }
@@ -26,7 +23,6 @@ const Competence = () => {
 
       <div className="competences_logo_container">
         <div className="competences_logo_container_competences_outils">
-          {/* Compétences */}
           <div className="competences_logo_container_competences">
             <h3 className="competences_logo_container_competences_title">Compétences :</h3>
             <div className="competences_logo_container_competences_logo">
@@ -36,7 +32,6 @@ const Competence = () => {
             </div>
           </div>
 
-          {/* Outils */}
           <div className="competences_logo_container_outils">
             <h3 className="competences_logo_container_outils_title">Outils :</h3>
             <div className="competences_logo_container_outils_logo">
@@ -47,7 +42,6 @@ const Competence = () => {
           </div>
         </div>
 
-        {/* Connaissances */}
         <div className="competences_logo_container_connaissances">
           <h3 className="competences_logo_container_connaissances_title">Connaissances :</h3>
           <div className="competences_logo_container_connaissances_container">

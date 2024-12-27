@@ -43,8 +43,8 @@ const Carrousel = () => {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       }}
-      slidesPerView={1} // Ajustez ce paramètre
-      slidesPerGroup={1} // Ajustez ce paramètre
+      slidesPerView={1}
+      slidesPerGroup={1}
       className="mySwiper3"
     >
       {slides.map((slide) => (
