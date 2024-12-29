@@ -40,7 +40,7 @@ const Carrousel = () => {
         disableOnInteraction: true,
         pauseOnMouseEnter: true,
       }}
-      speed={600}
+      speed={400}
       navigation={{
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
