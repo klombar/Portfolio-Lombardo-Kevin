@@ -1,21 +1,25 @@
 import Main from '../Components/Layout/Main/Main.jsx';
-import Carrousel from '../Components/Carrousel.jsx';
-import Form from '../Components/Form.jsx';
-import Competences from '../Components/Competences.jsx';
-import Presentation from '../Components/Presentation.jsx';
+import Carrousel from '../Components/UI/Carrousel.jsx';
+import Form from '../Components/UI/Form.jsx';
+import Competences from '../Components/UI/Competences.jsx';
+import Presentation from '../Components/UI/Presentation.jsx';
 
 function HomePage() {
   return (
     <>
       <Main>
 
-        <Presentation />
+        <section className='presentation'>
+          <Presentation />
+        </section>
 
-        <Competences />
+        <section className="competences" id="competences">
+          <Competences />
+        </section>
 
         <section className='projets' id='projets'>
           <h2 className='projets_title'>Projets</h2>
-            <Carrousel />
+          <Carrousel />
         </section>
 
         <section className='contact' id='contact'>

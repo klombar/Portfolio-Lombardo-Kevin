@@ -1,5 +1,5 @@
-import Nav from '../../Nav';
-import Logo from '../../Logo';
+import Nav from '../../UI/Nav';
+import Logo from '../../UI/Logo';
 import logoKevin from '../../../assets/Images/Logo/kevin/KL.png';
 
 function Header() {

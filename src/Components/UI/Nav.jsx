@@ -1,4 +1,4 @@
-import { scrollToSection } from '../Components/Utils/NavScrolltoSection.jsx';
+import { scrollToSection } from '../Utils/NavScrolltoSection';
 
 function Nav() {
   return (
