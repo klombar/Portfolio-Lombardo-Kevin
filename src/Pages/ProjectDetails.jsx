@@ -9,7 +9,7 @@ function ProjectDetails() {
 
   useEffect(() => {
 
-   fetch(`${process.env.PUBLIC_URL}/carrouselData.json`)
+   fetch('/Portfolio-Lombardo-Kevin/carrouselData.json')
      .then(response => response.json())
      .then(data => {
 
