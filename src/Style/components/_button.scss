@@ -3,10 +3,11 @@
   color: white;
   padding: 7px 45px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: bold;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #333333;
   &:hover{
     transform: scale(1.05);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(255, 255, 255, 0.4);
@@ -20,7 +21,7 @@
   padding: 7px 45px;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;

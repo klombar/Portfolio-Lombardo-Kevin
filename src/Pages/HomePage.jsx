@@ -18,7 +18,14 @@ function HomePage() {
         </section>
 
         <section className='projets' id='projets'>
-          <h2 className='projets_title'>Projets</h2>
+          <h2 className='projets_title'>Voici mes projets récents !</h2>
+          <p>
+          Le carrousel ci-dessous présente une sélection de mes réalisations. Chaque projet est accompagné d&apos;une description et d&apos;une évaluation de la difficulté. 
+          <br />
+          <strong>Clique sur les images pour en savoir plus</strong> sur chaque projet.
+          <br />
+          Si tu es intéressé par un projet, tu peux aussi accéder directement à son <strong>lien GitHub</strong> pour explorer le code source.
+        </p>
           <Carrousel />
         </section>
 
