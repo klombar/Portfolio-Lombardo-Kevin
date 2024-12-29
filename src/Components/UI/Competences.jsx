@@ -1,17 +1,12 @@
 import { useState, useEffect } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import {v4 as uuidv4} from 'uuid';
 import Logo from './Logo';
 
 const Competence = () => {
   const [logosData, setLogosData] = useState(null);
 
   useEffect(() => {
-    /* eslint-disable no-undef */
-    const basePath = process.env.NODE_ENV === 'production' ? '/Portfolio-Lombardo-Kevin' : ''; 
-    /* eslint-enable no-undef */
-    const url = `${basePath}/competencesData.json`;
-
-    fetch(url)
+    fetch('/competencesData.json')
       .then((response) => response.json())
       .then((data) => setLogosData(data))
       .catch((error) => console.error('Erreur lors du chargement des logos:', error));
@@ -32,7 +27,7 @@ const Competence = () => {
           <div className="competences_logo_container_competences">
             <h3 className="competences_logo_container_competences_title">Compétences :</h3>
             <div className="competences_logo_container_competences_logo">
-              {logosData.competences.map((logo) => (
+              {logosData.competences.map((logo, ) => (
                 <Logo key={uuidv4()} className={logo.className} src={logo.src} alt={logo.alt} />
               ))}
             </div>
