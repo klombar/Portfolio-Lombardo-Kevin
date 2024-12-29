@@ -6,7 +6,7 @@ import '../src/Style/main.scss';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.NODE_ENV === 'production' ? '/Portfolio-Lombardo-Kevin' : '/'}>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
