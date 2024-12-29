@@ -9,7 +9,7 @@ function ProjectDetails() {
 
   useEffect(() => {
 
-   fetch('carrouselData.json')
+   fetch(`${process.env.PUBLIC_URL}/carrouselData.json`)
      .then(response => response.json())
      .then(data => {
 
