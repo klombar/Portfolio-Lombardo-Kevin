@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   /* eslint-disable no-undef */
-  base: process.env.NODE_ENV === 'production' ? '' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/Portfolio-Lombardo-Kevin/' : '/',
   /* eslint-enable no-undef */
 })
