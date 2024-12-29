@@ -8,20 +8,19 @@ function ProjectDetails() {
   const [project, setProject] = useState(null);
 
   useEffect(() => {
-
-   fetch('/Portfolio-Lombardo-Kevin/carrouselData.json')
+   // Utiliser process.env.PUBLIC_URL pour obtenir le chemin correct en fonction de l'environnement
+   fetch('/carrouselData.json')
      .then(response => response.json())
      .then(data => {
-
        const foundProject = data.find(p => p.id === projectId);
        setProject(foundProject);
      })
      .catch(error => console.error('Error fetching project data:', error));
  }, [projectId]);
-
+ 
  if (!project) {
    return <div>Chargement...</div>;
- } 
+ }
 
    return (
       <>
