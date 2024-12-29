@@ -1,5 +1,6 @@
 [
    {
+     "id": "1",
      "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/riding%20cities.webp",
      "alt": "Image vitrine du projet riding cities",
      "title": "Riding Cities :",
@@ -8,6 +9,7 @@
      "difficultyRating": "1/5"
    },
    {
+     "id": "2",
      "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/booki%20(1).webp",
      "alt": "Image vitrine du projet booki",
      "title": "Booki :",
@@ -16,6 +18,7 @@
      "difficultyRating": "2/5"
    },
    {
+     "id": "3",
      "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/ohmyfood.webp",
      "alt": "Image vitrine du projet ohmyfood",
      "title": "Oh my food :",
@@ -24,6 +27,7 @@
      "difficultyRating": "2/5"
    },
    {
+     "id": "4",
      "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/print%20it.webp",
      "alt": "Image vitrine du projet print it",
      "title": "Print it :",
@@ -32,6 +36,7 @@
      "difficultyRating": "1/5"
    },
    {
+     "id": "5",
      "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/Sophie%20Bluel.webp",
      "alt": "Image vitrine du projet sophie bluel",
      "title": "Sophie Bluel :",
@@ -40,6 +45,7 @@
      "difficultyRating": "4/5"
    },
    {
+     "id": "6",
      "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/Kasa.webp",
      "alt": "Image vitrine du projet kasa",
      "title": "Kasa :",
@@ -48,6 +54,7 @@
      "difficultyRating": "4/5"
    },
    {
+     "id": "7",
      "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/Nina%20Carducci%20Photographie.webp",
      "alt": "Image vitrine du projet nina carducci",
      "title": "Nina Carducci :",
@@ -56,6 +63,7 @@
      "difficultyRating": "3/5"
    },
    {
+     "id": "8",
      "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/724events.webp",
      "alt": "Image vitrine du projet 724 events",
      "title": "724 Events :",
@@ -64,6 +72,7 @@
      "difficultyRating": "4/5"
    },
    {
+     "id": "9",
      "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/Argentbank.webp",
      "alt": "Image vitrine du projet argentbank",
      "title": "ArgentBank :",
@@ -72,6 +81,7 @@
      "difficultyRating": "5/5"
    },
    {
+     "id": "10",
      "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/qwenta.webp",
      "alt": "Image vitrine du projet qwenta",
      "title": "Qwenta :",

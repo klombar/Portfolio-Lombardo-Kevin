@@ -97,3 +97,9 @@
 .swiper-button-prev:hover {
   background-color: rgba(0, 0, 0, 0.8); 
 }
+
+.carrousel_button_container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}

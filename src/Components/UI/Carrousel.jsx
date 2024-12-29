@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCreative, Navigation, Autoplay } from 'swiper/modules';
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 import Overlay from './Overlay';
 import StarFilled from './StarFilled';
@@ -76,9 +77,14 @@ const Carrousel = () => {
                 <p>{slide.description}</p>
               </Overlay>
             </div>
-            <Button link={slide.link} classname='carrousel_link_button'>
-              Lien Github
-            </Button>
+            <div className="carrousel_button_container">
+              <Link to={`/project/${slide.id}`} className="carrousel_link_projetDescription">
+                Voir les détails
+              </Link>
+              <Button link={slide.link} classname='carrousel_link_button'>
+                Lien Github
+              </Button>
+            </div>
           </SwiperSlide>
         );
       })}
