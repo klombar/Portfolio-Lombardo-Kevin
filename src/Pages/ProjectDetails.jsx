@@ -25,15 +25,30 @@ function ProjectDetails() {
    return (
       <>
        <div className="project-detail">
-      <h1>{project.title}</h1>
-      <img src={project.image} alt={project.title} />
-      <p>{project.description}</p>
-      <div className="project-difficulty">
-        <strong>Difficulté:</strong> {project.difficultyRating}
+      <h1>Projet {project.title}</h1>
+      <div className='projectDetail_functionnality'>
+         <div className='projectDetail_functionnality_image_container'>
+            <div className='projectDetail_functionnality_image'>
+               <img src={project.image} alt={project.title} />
+            </div>
+            <div className='projectDetail_functionnality_image'>
+               <img src={project.image} alt={project.title} />
+            </div>
+         </div>
+         <div className='projectDetail_functionnality_image_container'>
+            <div className='projectDetail_functionnality_image'>
+               <img src={project.image} alt={project.title} />
+            </div>
+            <div className='projectDetail_functionnality_image'>
+               <img src={project.image} alt={project.title} />
+            </div>
+         </div>
       </div>
-      <Button link={project.link} classname='carrousel_link_button'>
-        Voir sur GitHub
-      </Button>
+      <div className='projectDetail_button_container'>
+         <Button link={project.link} classname='carrousel_link_button'>
+         Voir sur GitHub
+         </Button>
+      </div>
     </div>
       </>
    )
