@@ -61,7 +61,11 @@ const Carrousel = () => {
         return (
           <SwiperSlide key={uuidv4()}>
             <div className='image-overlay'>
-              <img src={slide.image} alt={slide.alt} />
+              <img 
+              src={slide.image} 
+              alt={slide.alt} 
+              loading='lazy'
+              />
               <Overlay>
                 <div className='overlay_title_difficultyNotation_container'>
                   <h3>{slide.title}</h3>

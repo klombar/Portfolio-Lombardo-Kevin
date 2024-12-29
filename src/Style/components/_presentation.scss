@@ -80,7 +80,7 @@
       overflow: hidden;
       transition: transform 0.6s ease, box-shadow 0.6s ease;
       border: 1px solid rgb(255, 255, 255);
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: 500px) {
         display: flex;
       }
 
@@ -106,7 +106,9 @@
 
   .presentation_container_description {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: justify;
     background-color: white;
     color: black;
     width: 100%;
@@ -124,6 +126,15 @@
       box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.6);
     }
 
+    & span{
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+
     @media screen and (max-width: 550px) {
       font-size: 1rem;
       padding: 20px;
@@ -137,7 +148,7 @@
     }
 
     @media screen and (min-width: 550px) and (max-width: 768px) {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       padding: 20px;
 
       &:hover {

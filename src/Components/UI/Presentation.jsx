@@ -14,7 +14,8 @@ function Presentation () {
    <div className='presentation_container_card'>
      <Card image={photoKevin} name='Lombardo Kevin' age='38' location='Arpajon' className='presentation_container_card_img'/>
      <p className='presentation_container_description'>
-     Je suis en reconversion professionnelle pour devenir développeur web front-end. Récemment diplômé de la formation OpenClassrooms, je suis désormais prêt à mettre en pratique les compétences acquises. Motivé et déterminé, je suis à la recherche d&apos;une entreprise qui me donnera l&apos;opportunité de m&apos;investir pleinement.<br />Ouvert à un emploi ou à une alternance, je suis prêt à relever de nouveaux challenges et à contribuer activement au succès de l&apos;équipe.
+      <span>Bonjour & bienvenue sur mon portfolio.</span> <br />
+      Je suis en reconversion professionnelle pour devenir développeur web front-end. Récemment diplômé de la formation OpenClassrooms, je suis désormais prêt à mettre en pratique les compétences acquises. Motivé et déterminé, je suis à la recherche d&apos;une entreprise qui me donnera l&apos;opportunité de m&apos;investir pleinement.<br />Ouvert à un emploi ou à une alternance, je suis prêt à relever de nouveaux challenges et à contribuer activement au succès de l&apos;équipe.
      </p>
    </div>
  </>

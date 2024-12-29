@@ -337,15 +337,13 @@
 .carrousel_link_button {
   background: linear-gradient(145deg, #c4c2c2, #a3a1a1);
   color: white;
-  padding: 7px 12px;
+  padding: 7px 45px;
   border-radius: 5px;
-  text-decoration: none;
   font-size: 20px;
   font-weight: bold;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .carrousel_link_button:hover {
   transform: scale(1.05);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(255, 255, 255, 0.4);
@@ -355,14 +353,17 @@
   margin: 15px 0px;
   background: linear-gradient(145deg, #c4c2c2, #a3a1a1);
   color: white;
-  padding: 7px 12px;
+  padding: 7px 45px;
   border-radius: 5px;
-  text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+}
+.submit_button:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(255, 255, 255, 0.4);
 }
 
 form {
@@ -448,18 +449,6 @@ form fieldset .form_email_field input {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
-}
-form .submit_button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-form .submit_button:hover {
-  background-color: #0056b3;
 }
 form p {
   font-size: 1rem;
@@ -816,7 +805,7 @@ form p {
   transition: transform 0.6s ease, box-shadow 0.6s ease;
   border: 1px solid rgb(255, 255, 255);
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   .presentation .presentation_container_card .presentation_container_card_img {
     display: flex;
   }
@@ -841,7 +830,9 @@ form p {
 }
 .presentation .presentation_container_description {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: justify;
   background-color: white;
   color: black;
   width: 100%;
@@ -858,6 +849,16 @@ form p {
   transform: translate3d(-10px, -10px, 0);
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.6);
 }
+.presentation .presentation_container_description span {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .presentation .presentation_container_description span {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 550px) {
   .presentation .presentation_container_description {
     font-size: 1rem;
@@ -872,7 +873,7 @@ form p {
 }
 @media screen and (min-width: 550px) and (max-width: 768px) {
   .presentation .presentation_container_description {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 20px;
   }
   .presentation .presentation_container_description:hover {
@@ -883,6 +884,38 @@ form p {
   .presentation .presentation_container_description {
     font-size: 0.9rem;
   }
+}
+
+.arrow-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: #333333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 19px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
+}
+@media screen and (min-width: 1024px) {
+  .arrow-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
+.arrow-to-top.visible {
+  opacity: 1;
+}
+.arrow-to-top:hover {
+  background-color: #555555;
 }
 
 * {
