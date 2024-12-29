@@ -6,7 +6,9 @@ import '../src/Style/main.scss';
 
 function App() {
   return (
+    /* eslint-disable no-undef */
     <Router basename={process.env.NODE_ENV === 'production' ? '/Portfolio-Lombardo-Kevin' : '/'}>
+    {/* eslint-enable no-undef */}
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />

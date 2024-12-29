@@ -66,7 +66,7 @@ const Carrousel = () => {
                 <div className='overlay_title_difficultyNotation_container'>
                   <h3>{slide.title}</h3>
                   <div className='difficultyNotation'>
-                    {ratingDifficultyArray} 
+                    Difficulté : {ratingDifficultyArray} 
                   </div>
                 </div>
                 <p>{slide.description}</p>
