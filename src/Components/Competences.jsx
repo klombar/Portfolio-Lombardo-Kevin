@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {v4 as uuidv4} from 'uuid';
 import Logo from './Logo';
 
 const Competence = () => {
@@ -26,8 +27,8 @@ const Competence = () => {
           <div className="competences_logo_container_competences">
             <h3 className="competences_logo_container_competences_title">Compétences :</h3>
             <div className="competences_logo_container_competences_logo">
-              {logosData.competences.map((logo, index) => (
-                <Logo key={index} className={logo.className} src={logo.src} alt={logo.alt} />
+              {logosData.competences.map((logo, ) => (
+                <Logo key={uuidv4()} className={logo.className} src={logo.src} alt={logo.alt} />
               ))}
             </div>
           </div>
@@ -35,8 +36,8 @@ const Competence = () => {
           <div className="competences_logo_container_outils">
             <h3 className="competences_logo_container_outils_title">Outils :</h3>
             <div className="competences_logo_container_outils_logo">
-              {logosData.outils.map((logo, index) => (
-                <Logo key={index} className={logo.className} src={logo.src} alt={logo.alt} />
+              {logosData.outils.map((logo) => (
+                <Logo key={uuidv4()} className={logo.className} src={logo.src} alt={logo.alt} />
               ))}
             </div>
           </div>
@@ -45,8 +46,8 @@ const Competence = () => {
         <div className="competences_logo_container_connaissances">
           <h3 className="competences_logo_container_connaissances_title">Connaissances :</h3>
           <div className="competences_logo_container_connaissances_container">
-            {logosData.connaissances.map((connaissance, index) => (
-              <div key={index} className="competences_logo_container_connaissances_container_connaissance">
+            {logosData.connaissances.map((connaissance) => (
+              <div key={uuidv4()} className="competences_logo_container_connaissances_container_connaissance">
                 <Logo className={connaissance.className} src={connaissance.src} alt={connaissance.alt} />
                 {connaissance.text}
               </div>

@@ -4,6 +4,7 @@
    justify-content: center;
    position: absolute;
    padding: 0 25px;
+   gap: 3px;
    top: 0;
    left: -100%; 
    width: 100%;
@@ -76,3 +77,23 @@
       max-height: 75%;
    }
 }
+
+.overlay_title_difficultyNotation_container {
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;
+   width: 100%;
+ }
+ 
+ .difficultyNotation {
+   display: flex;  
+   gap: 5px;
+   font-size: 1rem;
+   color: lightskyblue;
+   @media screen and (max-width: 480px) {
+      font-size: 0.5rem;
+   }
+   @media screen and (min-width: 480px) and (max-width: 768px) {
+      font-size: 0.7rem;
+   }
+ }
