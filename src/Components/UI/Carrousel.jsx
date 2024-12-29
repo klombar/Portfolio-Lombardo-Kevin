@@ -14,7 +14,10 @@ const Carrousel = () => {
   const [slides, setSlides] = useState([]);
 
   useEffect(() => {
-    fetch('/Portfolio-Lombardo-Kevin/carrouselData.json')
+    const basePath = process.env.NODE_ENV === 'production' ? '/Portfolio-Lombardo-Kevin' : ''; 
+    const url = `${basePath}/carrouselData.json`;
+
+    fetch(url)
       .then(response => response.json())
       .then(data => setSlides(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -52,9 +55,9 @@ const Carrousel = () => {
       {slides.map((slide) => {
         const difficulty = parseInt(slide.difficultyRating.split('/')[0], 10);
 
-        const ratingDifficultyArray = Array.from({ length: 5 }, (_, i) => 
+        const ratingDifficultyArray = Array.from({ length: 5 }, (_, i) =>
           i < difficulty
-            ? <StarFilled key={uuidv4()} /> 
+            ? <StarFilled key={uuidv4()} />
             : <StarEmpty key={uuidv4()} />
         );
 
@@ -66,7 +69,7 @@ const Carrousel = () => {
                 <div className='overlay_title_difficultyNotation_container'>
                   <h3>{slide.title}</h3>
                   <div className='difficultyNotation'>
-                    {ratingDifficultyArray} 
+                    {ratingDifficultyArray}
                   </div>
                 </div>
                 <p>{slide.description}</p>
