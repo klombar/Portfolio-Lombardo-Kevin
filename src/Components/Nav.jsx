@@ -1,6 +1,5 @@
 import { scrollToSection } from '../Components/Utils/NavScrolltoSection.jsx';
 
-
 function Nav() {
   return (
     <nav className="nav">
