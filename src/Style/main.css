@@ -362,6 +362,7 @@
   .carrousel_link_button,
   .carrousel_link_projetDescription {
     padding: 7px 25px;
+    font-size: 1rem;
   }
 }
 .carrousel_link_button:hover,
@@ -385,6 +386,7 @@
 @media screen and (max-width: 768px) {
   .submit_button {
     padding: 7px 25px;
+    font-size: 1rem;
   }
 }
 .submit_button:hover {
