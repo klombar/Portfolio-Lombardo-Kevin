@@ -22,9 +22,9 @@ function HomePage() {
           <p>
           Le carrousel ci-dessous présente une sélection de mes réalisations. Chaque projet est accompagné d&apos;une description et d&apos;une évaluation de la difficulté. 
           <br />
-          <strong>Clique sur les images pour en savoir plus</strong> sur chaque projet.
+          <strong>Cliquez sur les images pour en savoir plus</strong> sur chaque projet.
           <br />
-          Si tu es intéressé par un projet, tu peux aussi accéder directement à son <strong>lien GitHub</strong> pour explorer le code source.
+          Si vous êtes intéressé par un projet, vous pouvez aussi accéder directement à son <strong>lien GitHub</strong> pour explorer le code source.
         </p>
           <Carrousel />
         </section>

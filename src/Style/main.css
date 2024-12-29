@@ -358,6 +358,12 @@
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #333333;
 }
+@media screen and (max-width: 768px) {
+  .carrousel_link_button,
+  .carrousel_link_projetDescription {
+    padding: 7px 25px;
+  }
+}
 .carrousel_link_button:hover,
 .carrousel_link_projetDescription:hover {
   transform: scale(1.05);
@@ -375,6 +381,11 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .submit_button {
+    padding: 7px 25px;
+  }
 }
 .submit_button:hover {
   transform: scale(1.05);
