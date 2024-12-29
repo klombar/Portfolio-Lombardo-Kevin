@@ -9,7 +9,7 @@ function ProjectDetails() {
 
   useEffect(() => {
    // Utiliser process.env.PUBLIC_URL pour obtenir le chemin correct en fonction de l'environnement
-   fetch('/carrouselData.json')
+   fetch(process.env.PUBLIC_URL + '/carrouselData.json')
      .then(response => response.json())
      .then(data => {
        const foundProject = data.find(p => p.id === projectId);
@@ -46,7 +46,7 @@ function ProjectDetails() {
       </div>
       <div className='projectDetail_button_container'>
          <Button link={project.link} classname='carrousel_link_button'>
-         Voir sur GitHub
+            Voir sur GitHub
          </Button>
       </div>
     </div>
