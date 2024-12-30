@@ -79,6 +79,7 @@
 }
 .projets p {
   width: 100%;
+  text-align: center;
   max-width: 1240px;
   font-size: 1.2rem;
 }
@@ -956,6 +957,11 @@ form p {
 .project-detail h1 {
   text-align: center;
   margin-top: 30px;
+}
+@media screen and (max-width: 480px) {
+  .project-detail h1 {
+    font-size: 2.6rem;
+  }
 }
 
 .projectDetail_functionnality_image_container {
