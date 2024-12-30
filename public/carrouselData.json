@@ -21,7 +21,13 @@
      "title": "Booki",
      "description": "Vous commencez votre alternance chez Booki en tant que développeur web. Votre mission est d’intégrer l’interface du site avec HTML et CSS, en vous basant sur la maquette fournie par Loïc, l’UI designer, et les instructions de Sarah, la CTO. Vous devez compléter la base de code et respecter les spécifications techniques pour créer le site.",
      "link": "https://github.com/klombar/Projet-Booki",
-     "difficultyRating": "2/5"
+     "difficultyRating": "2/5",
+     "projectDetailsImages" : {
+      "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Booki/booki1.png",
+      "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Booki/booki2.png",
+      "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Booki/booki3.png",
+      "img4" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Booki/booki4.png"
+     }
    },
    {
      "id": "3",
