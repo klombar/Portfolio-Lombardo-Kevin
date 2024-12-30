@@ -36,7 +36,13 @@
      "title": "Oh my food",
      "description": "Vous rejoignez Ohmyfood en tant que développeur junior pour développer un site \"mobile first\" répertoriant les menus de restaurants gastronomiques. Les clients pourront composer leur repas à l’avance pour éviter les temps d'attente. Vous devez intégrer les maquettes mobile et desktop fournies par l'UX designer et respecter les spécifications du brief créatif. Le site doit être responsive, et vous utiliserez SASS pour organiser le CSS et intégrer des animations.",
      "link": "https://github.com/klombar/Projet-OhMyFood-Openclassrooms",
-     "difficultyRating": "2/5"
+     "difficultyRating": "2/5",
+     "projectDetailsImages" : {
+      "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Ohmyfood/ohmyfood1.png",
+      "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Ohmyfood/ohmyfood2.png",
+      "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Ohmyfood/ohmyfood3.png",
+      "img4" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Ohmyfood/ohmyfood4.png"
+     }
    },
    {
      "id": "4",
