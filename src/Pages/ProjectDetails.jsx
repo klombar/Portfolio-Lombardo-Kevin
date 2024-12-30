@@ -9,7 +9,7 @@ function ProjectDetails() {
 
   useEffect(() => {
    // Utiliser process.env.PUBLIC_URL pour obtenir le chemin correct en fonction de l'environnement
-   fetch('/Portfolio-Lombardo-Kevin/carrouselData.json')
+   fetch('carrouselData.json')
      .then(response => response.json())
      .then(data => {
        const foundProject = data.find(p => p.id === projectId);
