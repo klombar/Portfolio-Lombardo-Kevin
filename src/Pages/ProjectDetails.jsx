@@ -25,7 +25,7 @@ function ProjectDetails() {
    return (
       <>
        <div className="project-detail">
-      <h1>Projet {project.title}</h1>
+      <h1>Visuel Projet {project.title}</h1>
       <div className='projectDetail_functionnality'>
          <div className='projectDetail_functionnality_image_container'>
             <div className='projectDetail_functionnality_image'>
