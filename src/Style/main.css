@@ -185,7 +185,7 @@
   }
 }
 
-.logo-container {
+.logo-container link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,12 +193,12 @@
   font-size: 1.4rem;
 }
 @media screen and (max-width: 768px) {
-  .logo-container {
+  .logo-container link {
     width: 20%;
   }
 }
 @media screen and (min-width: 768px) {
-  .logo-container {
+  .logo-container link {
     width: 7%;
   }
 }
