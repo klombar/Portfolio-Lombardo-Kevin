@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Layout/Header/Header.jsx';
 import Footer from './Components/Layout/Footer/Footer.jsx';
 import HomePage from './Pages/HomePage.jsx';
@@ -10,7 +10,7 @@ function App() {
   return (
     /* eslint-disable no-undef */
     <Router basename={process.env.NODE_ENV === 'production' ? '/Portfolio-Lombardo-Kevin' : '/'}>
-    {/* eslint-enable no-undef */}
+      {/* eslint-enable no-undef */}
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
