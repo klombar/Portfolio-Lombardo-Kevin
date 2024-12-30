@@ -13,12 +13,6 @@
       gap: 35px;
       margin-top: 50px;
     }
-  & p{
-    width: 100%;
-    text-align: center;
-    max-width: 1240px;
-    font-size: 1.2rem;
-  }
   &_title{
     display: flex;
     justify-content: center;
@@ -27,6 +21,12 @@
       font-family: "Dancing Script", serif;
       font-size: 3rem;
       font-weight: bold;
+  }
+  &_description{
+    width: 100%;
+    text-align: center;
+    max-width: 1240px;
+    font-size: 1.2rem;
   }
 }
 

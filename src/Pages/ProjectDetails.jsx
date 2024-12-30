@@ -27,7 +27,7 @@ function ProjectDetails() {
         <div className="projectDetail_functionnality_image_container">
           {Object.values(project.projectDetailsImages).map((imageUrl, index) => (
             <div className="projectDetail_functionnality_image" key={index}>
-              <img src={imageUrl} alt={`${project.title} image ${index + 1}`} />
+              <img src={imageUrl} alt={`${project.title} image ${index + 1}`} loading='lazy' />
             </div>
           ))}
         </div>
