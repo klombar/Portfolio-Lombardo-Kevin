@@ -63,7 +63,15 @@
      "title": "Sophie Bluel",
      "description": "En tant que développeur front-end pour l’agence ArchiWebos, vous rejoignez une équipe en renfort pour concevoir le site portfolio d'une architecte d’intérieur. Votre mission consiste à développer la page de présentation des travaux, la page de connexion administrateur et une modale pour uploader des médias. Vous travaillez avec le design Figma, le code back-end et le code front-end existants, tout en suivant les tâches définies dans le Kanban.",
      "link": "https://github.com/klombar/Projet-ArchiWebos-Sophie-Bluel",
-     "difficultyRating": "4/5"
+     "difficultyRating": "4/5",
+     "projectDetailsImages" : {
+      "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Sophie%20Bluel/sophiebluel1.png",
+      "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Sophie%20Bluel/sophiebluel2.png",
+      "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Sophie%20Bluel/sophiebluel3.png",
+      "img4" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Sophie%20Bluel/sophiebluel4.png",
+      "img5" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Sophie%20Bluel/sophiebluel5.png",
+      "img6" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Sophie%20Bluel/sophiebluel6.png"
+     }
    },
    {
      "id": "6",
