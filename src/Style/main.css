@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0px 12px;
+  width: 100%;
   border-bottom: 3px solid;
   background-color: black;
   color: white;
@@ -49,10 +50,15 @@
   background-color: black;
   height: 200px;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 18px;
+  }
+}
 .footer_socials {
   display: flex;
   gap: 13px;
-  font-size: 15px;
+  font-size: 1.3rem;
 }
 .footer_legal {
   display: flex;

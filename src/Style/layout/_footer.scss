@@ -9,10 +9,14 @@ gap: 10px;
 color: white;
 background-color: black;
 height: 200px;
+@media screen and (min-width: 768px){
+  font-size: 18px;
+  
+}
 &_socials{
   display: flex;
   gap: 13px;
-  font-size: 15px;
+  font-size: 1.3rem;
 }
 &_legal{
   display: flex;
