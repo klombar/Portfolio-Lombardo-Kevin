@@ -80,7 +80,13 @@
      "title": "Kasa",
      "description": "En tant que développeur front-end freelance pour Kasa, vous devez refondre le site en React, en intégrant des composants et des routes React Router. Vous suivez les maquettes Figma responsives et implémentez des fonctionnalités comme une galerie d'images interactive et des menus déroulants animés. Le back-end n'est pas encore disponible, donc vous travaillez avec un fichier JSON contenant les 20 dernières annonces.",
      "link": "https://github.com/klombar/Projet-Kasa",
-     "difficultyRating": "4/5"
+     "difficultyRating": "4/5",
+     "projectDetailsImages" : {
+      "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Kasa/kasa1.png",
+      "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Kasa/kasa2.png",
+      "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Kasa/kasa3.png",
+      "img4" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Kasa/kasa4.png"
+     }
    },
    {
      "id": "7",
