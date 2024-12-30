@@ -51,7 +51,11 @@
      "title": "Print it",
      "description": "En tant que développeur front-end freelance, vous êtes chargé de dynamiser le site d'une imprimerie familiale, Print it. Votre première mission consiste à créer un carrousel pour le site, en suivant les instructions détaillées fournies par Lucien, le directeur.",
      "link": "https://github.com/klombar/Projet-Print_it-OpenClassRooms",
-     "difficultyRating": "1/5"
+     "difficultyRating": "1/5",
+     "projectDetailsImages" : {
+      "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Print%20it/printit1.png",
+  
+     }
    },
    {
      "id": "5",
