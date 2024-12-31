@@ -99,7 +99,7 @@
         "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci2.png"
      },
      "documents" : "/Rapport d'optimisation Nina Carducci.pdf",
-      "documentDescription" : "Rapport d'optimisation SEO pour le site de Nina Carducci"
+      "documentDescription" : "Rapport d'optimisation"
    },
    {
      "id": "8",
@@ -115,7 +115,7 @@
       "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/724%20Events/724events3.png"
      },
      "documents" : "/cahier de recette site 724 Events.pdf",
-     "documentDescription" : "cahier de recette site 724 Events"
+     "documentDescription" : "cahier de recette"
    },
    {
      "id": "9",
@@ -145,6 +145,6 @@
       "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank3.png"
      },
      "documents" : "/Webgencia - Qwenta MenuMaker - Présentation.pdf",
-     "documentDescription" : "Présentation du projet Qwenta MenuMaker"
+     "documentDescription" : "Présentation"
    }
  ]

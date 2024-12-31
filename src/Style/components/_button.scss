@@ -1,8 +1,11 @@
 .carrousel_link_button,
 .carrousel_link_projetDescription{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(145deg, #c4c2c2, #a3a1a1); 
   color: white;
-  padding: 7px 45px;
+  padding: 15px 50px;
   border-radius: 5px;
   font-size: 1.2rem;
   font-weight: bold;
