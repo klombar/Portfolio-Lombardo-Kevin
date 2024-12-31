@@ -100,7 +100,8 @@
         "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci1.png",
         "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci2.png"
      },
-     "documents" : "/Rapport d'optimisation Nina Carducci.pdf"
+     "documents" : "/Rapport d'optimisation Nina Carducci.pdf",
+      "documentDescription" : "Rapport d'optimisation SEO pour le site de Nina Carducci"
    },
    {
      "id": "8",
@@ -115,7 +116,8 @@
       "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/724%20Events/724events2.png",
       "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/724%20Events/724events3.png"
      },
-     "documents" : "/cahier de recette site 724 Events.pdf"
+     "documents" : "/cahier de recette site 724 Events.pdf",
+     "documentDescription" : "cahier de recette site 724 Events"
    },
    {
      "id": "9",
@@ -138,6 +140,13 @@
      "title": "Qwenta",
      "description": "Vous êtes développeur front-end chez Webgencia et devez préparer le projet \"Menu Maker\" pour Qwenta. En l'absence du Product Owner, Soufiane, vous rédigez un document de spécifications techniques et créez un tableau Kanban pour suivre les tâches. Vous organisez également une veille sur des technologies clés. Enfin, vous préparez une présentation pour Soufiane avant sa réunion avec le client.",
      "link": "https://github.com/klombar/Projet-Qwenta-MenuMaker",
-     "difficultyRating": "3/5"
+     "difficultyRating": "3/5",
+     "projectDetailsImages" : {
+      "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank1.png",
+      "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank2.png",
+      "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank3.png"
+     },
+     "documents" : "/Webgencia - Qwenta MenuMaker - Présentation.pdf",
+     "documentDescription" : "Présentation du projet Qwenta MenuMaker"
    }
  ]

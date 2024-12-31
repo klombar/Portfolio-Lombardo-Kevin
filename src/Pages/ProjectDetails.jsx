@@ -43,7 +43,7 @@ function ProjectDetails() {
         {/* Vérification de la présence du rapport d'optimisation */}
         {project.documents && project.documents.trim() !== "" && (
           <Button link={project.documents} classname="carrousel_link_button">
-            Voir le rapport d&apos;optimisation lié à ce projet.
+            {project.documentDescription}
           </Button>
         )}
       </div>
