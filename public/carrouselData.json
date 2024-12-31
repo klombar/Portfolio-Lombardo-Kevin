@@ -96,9 +96,9 @@
      "description": "En tant que développeur freelance, vous proposez vos services d'optimisation SEO à Nina Carducci, une photographe, pour améliorer la vitesse et la visibilité de son site. Vous lui proposez de corriger les problèmes d'images lourdes et d'optimiser le code du site. En retour, vous livrerez un rapport détaillant les améliorations et les résultats obtenus grâce à des audits de performance et d'accessibilité.",
      "link": "https://github.com/klombar/Projet-Nina-Carducci",
      "difficultyRating": "3/5",
-        "projectDetailsImages" : {
-      "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci1.png",
-      "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci2.png"
+     "projectDetailsImages" : {
+        "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci1.png",
+        "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci2.png"
      },
      "documents" : "/Rapport d'optimisation Nina Carducci.pdf"
    },
@@ -109,7 +109,12 @@
      "title": "724 Events",
      "description": "Vous êtes développeur front-end freelance et l'agence événementielle 724events vous contacte pour finaliser son site vitrine one-page. Le site est fonctionnel mais présente quelques bugs qui doivent être corrigés. Jean-Baptiste, le directeur Marketing, vous envoie le code du site ainsi qu'un cahier de recette à compléter pour s'assurer que tous les problèmes sont résolus. Vous devez rapidement déboguer et tester le site afin de le rendre pleinement opérationnel.",
      "link": "https://github.com/klombar/Projet-724events",
-     "difficultyRating": "4/5"
+     "difficultyRating": "4/5",
+     "projectDetailsImages" : {
+      "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci1.png",
+      "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci2.png"
+     },
+     "documents" : "/cahier de recette site 724 Events.pdf"
    },
    {
      "id": "9",
