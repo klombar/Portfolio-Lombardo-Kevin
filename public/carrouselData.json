@@ -140,9 +140,7 @@
      "link": "https://github.com/klombar/Projet-Qwenta-MenuMaker",
      "difficultyRating": "3/5",
      "projectDetailsImages" : {
-      "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank1.png",
-      "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank2.png",
-      "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank3.png"
+      "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/qwenta.webp"
      },
      "documents" : "/Webgencia - Qwenta MenuMaker - Présentation.pdf",
      "documentDescription" : "Présentation"
