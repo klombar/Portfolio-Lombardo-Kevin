@@ -99,7 +99,8 @@
         "projectDetailsImages" : {
       "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci1.png",
       "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci2.png"
-     }
+     },
+     "documents" : "/Rapport d'optimisation Nina Carducci.pdf"
    },
    {
      "id": "8",
