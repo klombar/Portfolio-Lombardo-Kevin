@@ -124,7 +124,12 @@
      "title": "ArgentBank",
      "description": "Vous avez rejoint Argent Bank en tant que développeur front-end pour la création d'un tableau de bord utilisateurs. Vous travaillez avec Mila sur l'authentification des utilisateurs : création d'une application React responsive pour la gestion des connexions, la consultation des profils et l'utilisation de Redux pour l'état. Vous suivez les bonnes pratiques de Green Code en optimisant les images et en créant des composants réutilisables.",
      "link": "https://github.com/klombar/Projet-Argentbank",
-     "difficultyRating": "5/5"
+     "difficultyRating": "5/5",
+     "projectDetailsImages" : {
+      "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank1.png",
+      "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank2.png",
+      "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank3.png"
+     }
    },
    {
      "id": "10",
