@@ -1,20 +1,20 @@
 export default {
    env: {
-     browser: true,  // Le code est destiné à être exécuté dans un navigateur
-     es2021: true,   // Utilisation des fonctionnalités modernes de JavaScript
+     browser: true,  
+     es2021: true,  
    },
    extends: [
      'eslint:recommended',
-     'plugin:react/recommended',   // Extensions recommandées pour React
-     'plugin:react-hooks/recommended',  // Extensions pour les hooks React
+     'plugin:react/recommended',   
+     'plugin:react-hooks/recommended', 
    ],
    parserOptions: {
-     ecmaVersion: 12,  // Assurez-vous que ESLint comprend les dernières fonctionnalités JavaScript
-     sourceType: 'module',  // Utilisation de modules ES6
+     ecmaVersion: 12, 
+     sourceType: 'module',  
    },
    plugins: ['react'],
    rules: {
-     // Définir des règles spécifiques à votre projet
+      "react/no-unescaped-entities": "off"
    },
  };
  
