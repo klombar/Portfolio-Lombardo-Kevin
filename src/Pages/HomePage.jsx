@@ -34,11 +34,11 @@ function HomePage() {
           <h2 className='contact_title'>Contact</h2>
           <div className='contact_formContainer'>
             <p className='contact_formTitle'>
-            En tant que développeur débutant, je suis pleinement conscient qu'il me reste encore beaucoup à apprendre et à explorer.
-            Avec enthousiasme, je m'efforce de perfectionner mes compétences .
+            En tant que développeur débutant, je suis pleinement conscient qu&apos;il me reste encore beaucoup à apprendre et à explorer.
+            Avec enthousiasme, je m&apos;efforce de perfectionner mes compétences .
             Si vous avez une proposition de collaboration, un projet à partager,
-            ou si vous souhaitez échanger des conseils sur ma manière d'aborder le développement de mes projets, je serais ravi de discuter avec vous.
-            Ce formulaire est là pour faciliter notre échange, et j'espère pouvoir apporter de la valeur à vos idées et besoins.
+            ou si vous souhaitez échanger des conseils sur ma manière d&apos;aborder le développement de mes projets, je serais ravi de discuter avec vous.
+            Ce formulaire est là pour faciliter notre échange, et j&apos;espère pouvoir apporter de la valeur à vos idées et besoins.
             </p>
             <Form />
           </div>

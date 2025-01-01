@@ -379,7 +379,7 @@
 @media screen and (min-width: 1024px) {
   .carrousel_link_button,
   .carrousel_link_projetDescription {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 .carrousel_link_button:hover,
@@ -392,18 +392,18 @@
   margin: 15px 0px;
   background: linear-gradient(145deg, #c4c2c2, #a3a1a1);
   color: white;
-  padding: 7px 35px;
+  padding: 7px 25px;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .submit_button {
-    padding: 7px 25px;
-    font-size: 1rem;
+    padding: 7px 35px;
+    font-size: 1.8rem;
   }
 }
 .submit_button:hover {
