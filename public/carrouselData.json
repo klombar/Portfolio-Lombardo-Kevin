@@ -11,7 +11,8 @@
       "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Riding%20cities/ridingCities1.png",
       "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Riding%20cities/ridingCities2.png",
       "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Riding%20cities/ridingCities3.png"
-     }
+     },
+     "introduction" : "Ce projet est une introduction aux fondamentaux du langage HTML, réalisé dans le cadre de la mise à jour de la page web d'une association. La tâche principale consistait à créer une nouvelle section sur la page en suivant les maquettes fournies. Dans cette section, j'ai ajouté un titre et deux boutons pour le téléchargement de plannings, tout en intégrant et en adaptant les styles CSS existants. Ce travail m'a permis de me familiariser avec l'ajout et la structuration d'éléments HTML, ainsi qu'avec l'interaction entre HTML et CSS pour la création de pages web. Pour ce projet, j'ai utilisé Figma pour consulter les maquettes et Visual Studio Code comme environnement de développement, deux outils essentiels pour tout développeur front-end."
    },
    {
      "id": "2",
@@ -25,7 +26,8 @@
       "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Booki/booki1.png",
       "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Booki/booki2.png",
       "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Booki/booki3.png"
-     }
+     },
+     "introduction" : "Dans ce projet, j'ai créé la page d'accueil d'une agence de voyage en utilisant HTML et CSS. Mon objectif principal était d'intégrer l'interface responsive du site en me basant sur des maquettes Figma pour mobile, tablette et desktop.J'ai dû recréer l'aspect et le design fournis dans les maquettes tout en utilisant HTML pour la structure et CSS pour le style. Cette tâche m'a permis de développer des compétences dans la création de composants d'interface avec HTML et CSS, en veillant à ce que le rendu soit conforme aux maquettes tout en étant adapté à toutes les tailles d'écran.Ce projet m'a permis d'approfondir ma compréhension de la manière dont HTML et CSS fonctionnent ensemble pour créer des expériences utilisateur optimales sur différents appareils.En travaillant sur ce projet, j'ai acquis des compétences clés en design responsive, un domaine essentiel du développement web moderne. J'ai également appris à intégrer des maquettes de manière précise et à configurer un environnement de développement front-end efficace, des compétences indispensables pour évoluer en tant que développeur front-end."
    },
    {
      "id": "3",
@@ -40,7 +42,8 @@
       "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Ohmyfood/ohmyfood2.png",
       "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Ohmyfood/ohmyfood3.png",
       "img4" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Ohmyfood/ohmyfood4.png"
-     }
+     },
+     "introduction" : "Dans ce projet, j'ai intégré les maquettes fournies (mobile et desktop) et un prototype Figma, en me concentrant sur une approche mobile-first. Cela m'a permis de comprendre l'importance de créer des sites web réactifs et adaptatifs.J'ai ajouté des animations CSS pour rendre l'interface plus dynamique et améliorer l'expérience utilisateur.J'ai utilisé Sass pour optimiser et structurer le CSS, facilitant ainsi la maintenance du code. Enfin, j'ai versionné le projet avec Git et GitHub, ce qui m'a permis de suivre l'évolution du projet et de collaborer efficacement."
    },
    {
      "id": "4",
@@ -52,7 +55,8 @@
      "difficultyRating": "1/5",
      "projectDetailsImages" : {
       "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Print%20it/printit1.png"
-     }
+     },
+      "introduction" : "Dans ce projet, j'ai appris à dynamiser un site d'imprimerie statique en y ajoutant un carrousel interactif avec JavaScript.Ma tâche principale consistait à mettre à jour le code HTML existant et à intégrer le carrousel en JavaScript, ce qui m'a permis de comprendre l'interaction entre JavaScript, HTML et CSS pour créer des éléments interactifs.J'ai utilisé Visual Studio Code pour coder et GitHub pour versionner le projet, ce qui m'a offert une expérience concrète de la programmation JavaScript dans un environnement de développement réel."
    },
    {
      "id": "5",
@@ -69,7 +73,8 @@
       "img4" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Sophie%20Bluel/sophiebluel4.png",
       "img5" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Sophie%20Bluel/sophiebluel5.png",
       "img6" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Sophie%20Bluel/sophiebluel6.png"
-     }
+     },
+     "introduction" : "Dans ce projet, j'ai créé une page web dynamique pour le site d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.Ma tâche principale consistait à développer la page de présentation des travaux de l'architecte à partir du HTML fourni, en gérant les événements utilisateurs et en manipulant les éléments du DOM avec JavaScript.J'ai également créé une page de connexion pour l'administrateur du site, ainsi qu'une modale permettant d'uploader de nouveaux médias.Pour la première fois, j'ai travaillé avec un code back-end, ce qui m'a permis d'apprendre à communiquer avec une API. J'ai utilisé Figma pour consulter les maquettes, Visual Studio Code pour le développement et GitHub pour la gestion de version du projet."
    },
    {
      "id": "6",
@@ -84,7 +89,8 @@
       "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Kasa/kasa2.png",
       "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Kasa/kasa3.png",
       "img4" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Kasa/kasa4.png"
-     }
+     },
+     "introduction" : "Dans ce projet, j'ai implémenté le front-end d'une application de location immobilière en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.J'ai travaillé sur la logique de présentation des données et sur les composants React, ce qui m'a permis de mieux comprendre l'usage de cette bibliothèque JavaScript populaire pour la création d'interfaces utilisateur.J'ai utilisé React Router pour gérer la navigation entre les différentes pages de l'application, ce qui m'a appris à configurer efficacement le routage dans une application web moderne.Le projet s'est concentré exclusivement sur le développement front-end, en se basant sur les maquettes fournies et en utilisant des données simulées extraites d'un fichier JSON.Pour démarrer, j'ai utilisé Vite, un outil qui facilite la configuration initiale d'une application React. J'ai également utilisé Node.js pour exécuter du code JavaScript en dehors du navigateur."
    },
    {
      "id": "7",
@@ -98,8 +104,9 @@
         "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci1.png",
         "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/Nina%20Carducci/ninacarducci2.png"
      },
+     "introduction" : "J'ai optimisé le référencement d'un site de photographe en travaillant sur plusieurs aspects clés : la vitesse de chargement, la structure du code, et l'accessibilité.Ma première tâche a été d'identifier les problèmes liés à ces aspects à l'aide d'outils comme Lighthouse et Wave.Ensuite, j'ai appliqué des améliorations ciblées pour accélérer le temps de chargement du site, améliorer la structure du code, et rendre le site plus accessible, ce qui contribue directement à un meilleur référencement.Enfin, j'ai réalisé un rapport détaillant les résultats obtenus avant et après les modifications, avec des captures d'écran des audits et des explications sur les améliorations apportées.",
      "documents" : "/Rapport d'optimisation Nina Carducci.pdf",
-      "documentDescription" : "Rapport d'optimisation"
+     "documentDescription" : "Rapport d'optimisation"
    },
    {
      "id": "8",
@@ -114,6 +121,7 @@
       "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/724%20Events/724events2.webp",
       "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/724%20Events/724events3.webp"
      },
+     "introduction" : "Dans ce projet, j'ai travaillé sur le débogage et la finalisation du développement d'un site one-page pour une agence d'événementiel.Tout d'abord, j'ai examiné le code existant et utilisé les Chrome DevTools pour identifier et comprendre les problèmes et bugs signalés sur le site. Une fois les problèmes identifiés, j'ai pu résoudre les bugs en utilisant mes connaissances en JavaScript. J'ai également tiré parti d'outils comme React Developer Tools, qui m'ont permis de mieux comprendre les erreurs et de les corriger efficacement.En plus du débogage, j'ai rédigé un cahier de recette, un document détaillant les scénarios de tests nécessaires pour m'assurer que le site fonctionnait correctement. Cela incluait des tests unitaires et fonctionnels pour vérifier chaque partie du site.J'ai également utilisé Yarn comme gestionnaire de packages et Node.js pour exécuter le code JavaScript côté serveur. Ces outils ont facilité la gestion des dépendances et l'exécution des tests localement.Pour le versioning et la gestion du code, j'ai utilisé GitHub, et pour le développement, j'ai travaillé avec Visual Studio Code. Ces outils m'ont permis de structurer mon travail et de collaborer efficacement tout au long du projet.",
      "documents" : "/cahier de recette site 724 Events.pdf",
      "documentDescription" : "cahier de recette"
    },
@@ -129,7 +137,8 @@
       "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank1.webp",
       "img2" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank2.webp",
       "img3" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Details%20projet%20images/ArgentBank/argentbank3.webp"
-     }
+     },
+     "introduction" : "Dans ce projet, j'ai travaillé sur le développement front-end d’une application bancaire, en utilisant React et Redux pour créer une interface dynamique et réactive.Ma mission principale a été d'intégrer le front-end avec le back-end en réalisant des appels API REST. Cela a permis de connecter les deux parties de l'application et d'assurer une communication fluide entre le client et le serveur.J'ai utilisé React pour développer l'interface utilisateur, en me concentrant particulièrement sur la création d'un tableau de bord complet et responsive, offrant ainsi une expérience optimale aux utilisateurs.Pour gérer l'état de l'application de manière efficace, j'ai utilisé Redux. Cette bibliothèque m'a permis de maintenir un état global cohérent à travers l’application.Pour définir les points d’accès de l’API et gérer les interactions avec les données des transactions, j'ai utilisé Swagger. Cet outil m'a permis de décrire de manière claire et précise les routes et les actions nécessaires pour l'API.Enfin, j'ai utilisé Node.js pour exécuter le code JavaScript côté serveur, ce qui m’a offert une expérience pratique dans la gestion d'une application full-stack."
    },
    {
      "id": "10",
@@ -142,6 +151,7 @@
      "projectDetailsImages" : {
       "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/refs/heads/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/qwenta.webp"
      },
+     "introduction" : "Dans ce projet, j'ai été impliqué dans la planification du développement d'un site web, sans intervenir directement dans le codage.Ma mission consistait à organiser le développement en analysant les maquettes, les spécifications fonctionnelles et les User Stories du site. J'ai également entrepris une veille technologique pour rester informé des dernières tendances et technologies pertinentes pour le projet.J'ai rédigé les spécifications techniques, en identifiant les besoins fonctionnels et en décomposant les fonctionnalités en tâches spécifiques. Cette phase de planification était essentielle pour garantir que le développement se déroule de manière structurée.Pour gérer le projet, j'ai utilisé un outil de gestion de projet, comme Notion, pour organiser les tâches et créer un tableau Kanban. Cela m'a permis de suivre efficacement l'avancement du projet et de m'assurer que toutes les étapes étaient bien couvertes.Enfin, j'ai présenté la solution technique, en expliquant les choix faits et la manière dont les besoins fonctionnels ont été traduits en spécifications techniques.",
      "documents" : "/Webgencia - Qwenta MenuMaker - Présentation.pdf",
      "documentDescription" : "Présentation"
    }

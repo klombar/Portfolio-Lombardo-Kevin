@@ -21,10 +21,9 @@ function ProjectDetails() {
   }
 
   return (
-    <div className="project-detail">
+    <div className="project_detail">
       <h1>Visuels du Projet {project.title}</h1>
-
-      {/* Affichage des images de détail du projet */}
+      <p className='project_detail_introduction'>{project.introduction}</p>
       <div className="projectDetail_functionnality_image_container">
         {Object.values(project.projectDetailsImages).map((imageUrl, index) => (
           <div className="projectDetail_functionnality_image" key={index}>
@@ -33,14 +32,12 @@ function ProjectDetails() {
         ))}
       </div>
 
-      {/* Affichage des boutons */}
       <div className="projectDetail_button_container">
-        {/* Bouton GitHub */}
+
         <Button link={project.link} classname="carrousel_link_button">
           Voir sur GitHub
         </Button>
 
-        {/* Vérification de la présence du rapport d'optimisation */}
         {project.documents && project.documents.trim() !== "" && (
           <Button link={project.documents} classname="carrousel_link_button">
             {project.documentDescription}

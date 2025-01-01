@@ -1,4 +1,4 @@
-.project-detail{
+.project_detail{
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -6,12 +6,24 @@
    gap: 30px;
    flex: 1;
    background-color: #dfe4e7;
+   & p{
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0 20px;
+      @media screen and (max-width: 480px){
+         font-size: 0.8rem;
+      }
+      @media screen and (min-width:480px) and (max-width: 768px){
+         font-size: 1.1rem;
+      }
+   }
    & h1{
       text-align: center;
       margin-top: 30px;
       @media screen and (max-width: 480px){
          font-size: 2.6rem;
       }
+
    }
 }
 
@@ -51,4 +63,8 @@
    justify-content: center;
    gap : 30px;
    margin-bottom: 30px;
+}
+
+.project_detail_description{
+   text-align: center;
 }

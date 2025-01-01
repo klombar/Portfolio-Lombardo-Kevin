@@ -123,10 +123,13 @@
 }
 .contact_formContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  gap: 10px;
+  text-align: center;
+  max-width: 1240px;
+  width: 100%;
+  gap: 50px;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
@@ -190,6 +193,12 @@
     flex-direction: column;
     gap: 1.5rem;
   }
+}
+
+.nav-return {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .logo-container link {
@@ -354,21 +363,23 @@
 
 .carrousel_link_button,
 .carrousel_link_projetDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(145deg, #c4c2c2, #a3a1a1);
   color: white;
-  padding: 7px 45px;
+  padding: 7px 25px;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: bold;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #333333;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
   .carrousel_link_button,
   .carrousel_link_projetDescription {
-    padding: 7px 25px;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 .carrousel_link_button:hover,
@@ -381,10 +392,10 @@
   margin: 15px 0px;
   background: linear-gradient(145deg, #c4c2c2, #a3a1a1);
   color: white;
-  padding: 7px 45px;
+  padding: 7px 35px;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
@@ -940,8 +951,8 @@ form p {
 }
 @media screen and (min-width: 768px) {
   .arrow-to-top {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     font-size: 40px;
   }
 }
@@ -952,20 +963,36 @@ form p {
   background-color: #555555;
 }
 
-.project-detail {
+.project_detail {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 30px;
   flex: 1;
   background-color: #dfe4e7;
 }
-.project-detail h1 {
+.project_detail p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 20px;
+}
+@media screen and (max-width: 480px) {
+  .project_detail p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .project_detail p {
+    font-size: 1.1rem;
+  }
+}
+.project_detail h1 {
   text-align: center;
   margin-top: 30px;
 }
 @media screen and (max-width: 480px) {
-  .project-detail h1 {
+  .project_detail h1 {
     font-size: 2.6rem;
   }
 }
@@ -999,12 +1026,43 @@ form p {
   border: 2px solid black;
   border-radius: 15px;
 }
+@media screen and (max-width: 480px) {
+  .projectDetail_functionnality_image img {
+    border: 1px solid black;
+  }
+}
 
 .projectDetail_button_container {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-bottom: 30px;
+}
+
+.project_detail_description {
+  text-align: center;
+}
+
+.error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 85vh;
+  background-color: #dfe4e7;
+}
+.error404_title {
+  display: flex;
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Dancing Script", serif;
+}
+.error404_description {
+  display: flex;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Dancing Script", serif;
 }
 
 * {
@@ -1051,4 +1109,14 @@ h2 {
 
 h3 {
   color: white;
+}
+
+label {
+  font-size: 1rem;
+  text-align: start;
+}
+@media screen and (min-width: 768px) {
+  label {
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=main.css.map */

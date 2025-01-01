@@ -63,3 +63,11 @@ html {
  h3 { 
    color: white;
  }
+
+ label{
+   font-size: 1rem;
+   text-align: start;
+   @media screen and (min-width: 768px){
+      font-size: 1.3rem;
+   }
+ }
