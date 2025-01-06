@@ -322,7 +322,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 15.7/8;
-  border-radius: 25px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -331,7 +331,6 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 25px;
 }
 
 .carrousel_button_container {
