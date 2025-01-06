@@ -540,6 +540,7 @@ form p {
   color: black;
   font-weight: 500;
   font-size: 1rem;
+  line-height: normal;
 }
 @media screen and (max-width: 480px) {
   .overlay p {
