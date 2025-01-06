@@ -1,7 +1,8 @@
 
   {
      "rewrites": [
-       { "source": "/project/:projectId", "destination": "/" }
+       { "source": "/project/:projectId", "destination": "/" },
+       { "source": "/(.*)", "destination": "/" }
      ]
   }
  
