@@ -1,9 +1,6 @@
 {
    "version": 2,
    "routes": [
-     { "src": "/(.*)", "dest": "/" }
-   ],
-   "rewrites": [
-     { "source": "/project/:projectId", "destination": "/" }
+     { "src": "/(.*)", "dest": "/index.html" }
    ]
  }
