@@ -32,43 +32,7 @@ const Carrousel = () => {
       prevIndex === 0 ? slides.length - 1 : prevIndex - 1
     );
   }, [slides.length]); 
-
-
-  useEffect(() => {
-    const slider = slideContainerRef.current;
-    let startX = 0;
-    let endX = 0;
-
-    const handleTouchStart = (e) => {
-      startX = e.touches[0].clientX;
-    };
-
-    const handleTouchMove = (e) => {
-      endX = e.touches[0].clientX; 
-    };
-
-    const handleTouchEnd = () => {
-      const distance = Math.abs(startX - endX);
-
-      if (distance > 50) { 
-        if (startX > endX) {
-          nextSlide(); // Swipe vers la gauche
-        } else if (startX < endX) {
-          prevSlide(); 
-        }
-      }
-    };
-
-    slider.addEventListener('touchstart', handleTouchStart);
-    slider.addEventListener('touchmove', handleTouchMove);
-    slider.addEventListener('touchend', handleTouchEnd);
-
-    return () => {
-      slider.removeEventListener('touchstart', handleTouchStart);
-      slider.removeEventListener('touchmove', handleTouchMove);
-      slider.removeEventListener('touchend', handleTouchEnd);
-    };
-  }, [nextSlide, prevSlide]); 
+  
 
   return (
     <div className="carrousel-container" ref={slideContainerRef}>
