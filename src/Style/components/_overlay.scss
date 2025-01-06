@@ -54,28 +54,9 @@
    }
 }
 
-.image-overlay:hover .overlay {
+.carrousel-image-overlay:hover .overlay {
    left: 0; 
    opacity: 1; 
-}
-
-.image-overlay{
-   position: relative;
-   overflow: hidden;
-   border-radius: 10px;
-   width: 100%;
-   max-width: 1240px;
-   height: 100%;
-   max-height: 75%;
-   @media screen and (max-width: 480px){
-      max-height: 71%;
-   }
-   @media screen and (min-width: 481px) and (max-width: 768px){
-      max-height: 75%;
-   }
-   @media screen and (min-width: 768px){
-      max-height: 75%;
-   }
 }
 
 .overlay_title_difficultyNotation_container {

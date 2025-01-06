@@ -14,7 +14,6 @@
 @use 'components/overlay' as *;
 @use 'components/competences' as *;
 @use 'components/presentation' as *;
-@use 'components/arrowtotop' as *;
 @use 'page/projectDetails' as *;
 @use 'page/Error404' as *;
 
@@ -70,4 +69,8 @@ html {
    @media screen and (min-width: 768px){
       font-size: 1.3rem;
    }
+ }
+
+ p{
+   line-height: 1.5rem;
  }

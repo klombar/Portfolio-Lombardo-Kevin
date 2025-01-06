@@ -1,18 +1,16 @@
-import { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCreative, Navigation, Autoplay } from 'swiper/modules';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import Overlay from './Overlay';
 import StarFilled from './StarFilled';
 import StarEmpty from './StarEmpty';
-import 'swiper/css';
-import 'swiper/css/effect-creative';
-import 'swiper/css/navigation';
 
 const Carrousel = () => {
-  const [slides, setSlides] = useState([]);
+  const [slides, setSlides] = useState([]); 
+  const [currentIndex, setCurrentIndex] = useState(0); 
+  const slideContainerRef = useRef(); 
+
 
   useEffect(() => {
     fetch('/carrouselData.json')
@@ -21,57 +19,81 @@ const Carrousel = () => {
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
+
+  const nextSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+    );
+  }, [slides.length]); 
+
+
+  const prevSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+    );
+  }, [slides.length]); 
+
+
+  useEffect(() => {
+    const slider = slideContainerRef.current;
+    let startX = 0;
+    let endX = 0;
+
+    const handleTouchStart = (e) => {
+      startX = e.touches[0].clientX;
+    };
+
+    const handleTouchMove = (e) => {
+      endX = e.touches[0].clientX; 
+    };
+
+    const handleTouchEnd = () => {
+      const distance = Math.abs(startX - endX);
+
+      if (distance > 50) { 
+        if (startX > endX) {
+          nextSlide(); // Swipe vers la gauche
+        } else if (startX < endX) {
+          prevSlide(); 
+        }
+      }
+    };
+
+    slider.addEventListener('touchstart', handleTouchStart);
+    slider.addEventListener('touchmove', handleTouchMove);
+    slider.addEventListener('touchend', handleTouchEnd);
+
+    return () => {
+      slider.removeEventListener('touchstart', handleTouchStart);
+      slider.removeEventListener('touchmove', handleTouchMove);
+      slider.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, [nextSlide, prevSlide]); 
+
   return (
-    <Swiper
-      grabCursor={true}
-      effect={'creative'}
-      creativeEffect={{
-        prev: {
-          shadow: true,
-          translate: ['-20%', 0, -1],
-        },
-        next: {
-          translate: ['100%', 0, 0],
-        },
-      }}
-      loop={true}
-      modules={[EffectCreative, Navigation, Autoplay]}
-      autoplay={{
-        delay: 6000,
-        disableOnInteraction: true,
-        pauseOnMouseEnter: true,
-      }}
-      speed={400}
-      navigation={{
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      }}
-      slidesPerView={1}
-      slidesPerGroup={1}
-      className="mySwiper3"
-    >
-      {slides.map((slide) => {
-        const difficulty = parseInt(slide.difficultyRating.split('/')[0], 10);
+    <div className="carrousel-container" ref={slideContainerRef}>
+      <button className="carrousel-button-prev" onClick={prevSlide}>
+        &#10094;
+      </button>
 
-        const ratingDifficultyArray = Array.from({ length: 5 }, (_, i) => 
-          i < difficulty
-            ? <StarFilled key={uuidv4()} /> 
-            : <StarEmpty key={uuidv4()} />
-        );
-
-        return (
-          <SwiperSlide key={uuidv4()}>
-            <div className='image-overlay'>
-              <img 
-              src={slide.image} 
-              alt={slide.alt} 
-              loading='lazy'
-              />
+      <div className="slide-container">
+        {slides.map((slide, index) => (
+          <div
+            key={uuidv4()}
+            className={`slide ${index === currentIndex ? 'active' : ''}`}
+          >
+            <div className='carrousel-image-overlay'>
+              <img src={slide.image} alt={slide.alt} loading='lazy'/>
               <Overlay>
                 <div className='overlay_title_difficultyNotation_container'>
                   <h3>{slide.title}</h3>
                   <div className='difficultyNotation'>
-                    Difficulté : {ratingDifficultyArray} 
+                    Difficulté :
+                    {Array.from({ length: 5 }, (_, i) =>
+                      i < parseInt(slide.difficultyRating.split('/')[0], 10)
+                        ? <StarFilled key={uuidv4()} />
+                        : <StarEmpty key={uuidv4()} />
+                    )}
                   </div>
                 </div>
                 <p>{slide.description}</p>
@@ -85,12 +107,14 @@ const Carrousel = () => {
                 Lien Github
               </Button>
             </div>
-          </SwiperSlide>
-        );
-      })}
-      <div className="swiper-button-prev"></div>
-      <div className="swiper-button-next"></div>
-    </Swiper>
+          </div>
+        ))}
+      </div>
+
+      <button className="carrousel-button-next" onClick={nextSlide}>
+        &#10095;
+      </button>
+    </div>
   );
 };
 

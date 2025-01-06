@@ -10,7 +10,7 @@ function HomePage() {
     <>
       <Main>
 
-        <section className='presentation'>
+        <section className='presentation' id='presentation'>
           <Presentation />
         </section>
 
