@@ -9,9 +9,12 @@
     margin-top: 50px;
     gap: 40px;
     padding: 0 20px;
+    scroll-margin-top: 110px;
+
     @media screen and (max-width: 768px){
       gap: 35px;
       margin-top: 50px;
+      scroll-margin-top:220px;
     }
   &_title{
     display: flex;
@@ -82,4 +85,31 @@
 .silverline{
   border: 2.5px solid #BDC3C7;  
   width: 100%;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(110px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#presentation,
+#competences,
+#projets,
+#contact {
+  scroll-margin-top: 110px;
+}
+
+@media screen and (max-width: 768px) {
+  #presentation,
+  #competences,
+  #projets,
+  #contact {
+    scroll-margin-top: 220px;
+  }
 }
