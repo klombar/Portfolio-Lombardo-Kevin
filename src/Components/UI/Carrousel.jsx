@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
 import Button from './Button';
@@ -9,8 +9,6 @@ import StarEmpty from './StarEmpty';
 const Carrousel = () => {
   const [slides, setSlides] = useState([]); 
   const [currentIndex, setCurrentIndex] = useState(0); 
-  const slideContainerRef = useRef(); 
-
 
   useEffect(() => {
     fetch('/carrouselData.json')
@@ -19,23 +17,20 @@ const Carrousel = () => {
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
-
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === slides.length - 1 ? 0 : prevIndex + 1
     );
-  }, [slides.length]); 
-
+  }, [slides.length]);
 
   const prevSlide = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? slides.length - 1 : prevIndex - 1
     );
-  }, [slides.length]); 
-  
+  }, [slides.length]);
 
   return (
-    <div className="carrousel-container" ref={slideContainerRef}>
+    <div className="carrousel-container">
       <button className="carrousel-button-prev" onClick={prevSlide}>
         &#10094;
       </button>
@@ -43,15 +38,15 @@ const Carrousel = () => {
       <div className="slide-container">
         {slides.map((slide, index) => (
           <div
-            key={uuidv4()}
+            key={slide.id} 
             className={`slide ${index === currentIndex ? 'active' : ''}`}
           >
-            <div className='carrousel-image-overlay'>
-              <img src={slide.image} alt={slide.alt} loading='lazy'/>
+            <div className="carrousel-image-overlay">
+              <img src={slide.image} alt={slide.alt} loading="lazy" />
               <Overlay>
-                <div className='overlay_title_difficultyNotation_container'>
+                <div className="overlay_title_difficultyNotation_container">
                   <h3>{slide.title}</h3>
-                  <div className='difficultyNotation'>
+                  <div className="difficultyNotation">
                     Difficulté :
                     {Array.from({ length: 5 }, (_, i) =>
                       i < parseInt(slide.difficultyRating.split('/')[0], 10)
@@ -67,7 +62,7 @@ const Carrousel = () => {
               <Link to={`/project/${slide.id}`} className="carrousel_link_projetDescription">
                 Voir les détails
               </Link>
-              <Button link={slide.link} classname='carrousel_link_button'>
+              <Button link={slide.link} classname="carrousel_link_button">
                 Lien Github
               </Button>
             </div>

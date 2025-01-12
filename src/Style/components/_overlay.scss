@@ -72,10 +72,18 @@
    gap: 5px;
    font-size: 1rem;
    color: lightskyblue;
+   opacity: 0;
+   transform: translateX(30px);
+   transition: transform 1.3s ease, opacity 1.3s ease;
    @media screen and (max-width: 480px) {
       font-size: 0.5rem;
    }
    @media screen and (min-width: 480px) and (max-width: 768px) {
       font-size: 0.7rem;
    }
+ }
+
+ .carrousel-image-overlay:hover .overlay .difficultyNotation {
+   opacity: 1;
+   transform: translateX(0);
  }
