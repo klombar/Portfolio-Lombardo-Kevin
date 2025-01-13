@@ -89,8 +89,8 @@
 
 .hidden {
   opacity: 0;
-  transform: translateY(110px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .visible {

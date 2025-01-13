@@ -14,9 +14,10 @@ function Nav() {
           <div className="nav-return">
             <Link to="/" className="return-home">Retour à l&apos;accueil</Link>
           </div>
+          
         ) : (
-          <>
 
+          <>
             <div className="liste_accueil_competences">
               <li onClick={() => scrollToSection('presentation')}>Présentation</li>
               <li onClick={() => scrollToSection('competences')}>Compétences techniques</li>
