@@ -154,5 +154,35 @@
      "introduction" : "Dans ce projet, j'ai été impliqué dans la planification du développement d'un site web, sans intervenir directement dans le codage.Ma mission consistait à organiser le développement en analysant les maquettes, les spécifications fonctionnelles et les User Stories du site. J'ai également entrepris une veille technologique pour rester informé des dernières tendances et technologies pertinentes pour le projet.J'ai rédigé les spécifications techniques, en identifiant les besoins fonctionnels et en décomposant les fonctionnalités en tâches spécifiques. Cette phase de planification était essentielle pour garantir que le développement se déroule de manière structurée.Pour gérer le projet, j'ai utilisé un outil de gestion de projet, comme Notion, pour organiser les tâches et créer un tableau Kanban. Cela m'a permis de suivre efficacement l'avancement du projet et de m'assurer que toutes les étapes étaient bien couvertes.Enfin, j'ai présenté la solution technique, en expliquant les choix faits et la manière dont les besoins fonctionnels ont été traduits en spécifications techniques.",
      "documents" : "/Webgencia - Qwenta MenuMaker - Présentation.pdf",
      "documentDescription" : "Présentation"
-   }
+   },
+  {
+    "id": "11",
+    "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/image%20vitrine%20calculatrice.png",
+    "alt": "Image vitrine du projet calculatrice",
+    "title": "Calculatrice",
+    "description": "Projet personnel de création d'une calculatrice en JavaScript. L'objectif est de créer une calculatrice simple avec les opérations de base (addition, soustraction, multiplication, division) et la possibilité de supprimer les chiffres un par un.",
+    "link": "https://klombar.github.io/Projet-Calculatrice/",
+    "difficultyRating": "1/5",
+    "projectDetailsImages" : {
+     "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/image%20vitrine%20calculatrice.png"
+    },
+    "introduction" : "J'ai découvert ce petit projet sur la chaine youtube du youtubeur developpeur Melvynx, qui propose des projets pour débutants en JavaScript. J'ai trouvé ce projet intéressant pour me familiariser avec les bases du JavaScript.",
+    "documents" : "",
+    "documentDescription" : ""
+  },
+  {
+    "id": "12",
+    "image": "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/image%20vitrine%20password%20generator.png",
+    "alt": "Image vitrine du projet password generator",
+    "title": "Password generator",
+    "description": "Projet personnel de création d'un générateur de mot de passe en JavaScript. L'objectif est de générer des mots de passe aléatoires en fonction des critères choisis par l'utilisateur, comme la longueur du mot de passe, l'inclusion de lettres majuscules, de chiffres et de caractères spéciaux.",
+    "link": "https://github.com/klombar/Projet-PasswordGenerator",
+    "difficultyRating": "2/5",
+    "projectDetailsImages" : {
+     "img1" : "https://raw.githubusercontent.com/klombar/Portfolio-Lombardo-Kevin/main/src/assets/Images/Image%20vitrine%20projet%20carrousel/image%20vitrine%20password%20generator.png"
+    },
+    "introduction" : "Ma recherche de challenge sous forme de projet personnel m'a conduit sur la châine youtube du youtubeur developpeur Melvynx sur lequel il presente quelques projets, parmis eux celui-ci que j'ai trouvé intéressant.",
+    "documents" : "",
+    "documentDescription" : ""
+  }
  ]
