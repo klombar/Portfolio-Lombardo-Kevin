@@ -2,7 +2,7 @@ import proptypes from 'prop-types';
 
 function Main({children}) {
   return (
-    <div className="main">
+    <div className="main" role='main'>
       {children}
     </div>
   )

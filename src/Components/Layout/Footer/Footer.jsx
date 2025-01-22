@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="footer" id="footer">
+    <footer className="footer" id="footer" role="footer">
       <div className="footer_socials">
         <a href="https://www.linkedin.com/in/votreprofil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/klombar?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
