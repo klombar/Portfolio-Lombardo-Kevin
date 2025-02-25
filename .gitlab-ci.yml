@@ -1,0 +1,54 @@
+# Utilise une image Docker avec Node.js et Git
+image: node:20
+
+# Variables globales
+variables:
+  NODE_ENV: test
+  CI: true
+  GITHUB_TOKEN: $GITHUB_TOKEN
+  GITHUB_USERNAME: $GITHUB_USERNAME
+  GITHUB_REPO: $GITHUB_REPO
+
+# Cache pour accélérer la pipeline
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+# Étapes de la pipeline
+stages:
+  - install
+  - test
+  - commit_and_push
+
+# Étape 1 : Installer les dépendances
+install_dependencies:
+  stage: install
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 week
+
+# Étape 2 : Lancer les tests
+run_tests:
+  stage: test
+  script:
+    - npm run test
+  only:
+    - main
+
+# Étape 3 : Commit et Push si les tests réussissent
+commit_and_push_if_success:
+  stage: commit_and_push
+  script:
+    - git config --global user.name "GitLab CI"
+    - git config --global user.email "ci@example.com"
+    - git clone https://oauth2:$GITHUB_TOKEN@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git
+    - cd $GITHUB_REPO
+    - git add .
+    - git diff --cached --quiet || git commit -m "Automated commit: Tests passed"
+    - git push https://oauth2:$GITHUB_TOKEN@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git main
+  only:
+    - main
