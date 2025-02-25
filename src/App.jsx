@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Layout/Header/Header.jsx';
 import Footer from './Components/Layout/Footer/Footer.jsx';
-import HomePage from './Pages/HomePage.jsx';
-import ProjectDetails from './Pages/ProjectDetails.jsx';
-import Error404 from './Pages/Error404.jsx';
+import HomePage from '../src/Pages/HomePage/HomePage.jsx';
+import ProjectDetails from '../src/Pages/ProjectDetails/ProjectDetails.jsx';
+import Error404 from '../src/Pages/Error404/Error404.jsx';
 import '../src/Style/main.scss';
 
 function App() {

@@ -1,6 +1,6 @@
 import React from 'react';
-import Nav from '../../UI/Nav';
-import Logo from '../../UI/Logo';
+import Nav from '../../UI/Nav/Nav.jsx';
+import Logo from '../../UI/Logo/Logo';
 import logoKevin from '../../../assets/Images/Logo/kevin/KL.png';
 
 function Header() {

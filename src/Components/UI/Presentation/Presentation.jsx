@@ -1,5 +1,5 @@
-import Card from './Card';
-import photoKevin from '../../assets/Images/Photos/photo portfolio kevin.webp';
+import Card from '../Card/Card.jsx';
+import photoKevin from '../../../assets/Images/Photos/portrait kevin.jpg';
 
 function Presentation () {
   return (

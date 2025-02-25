@@ -1,5 +1,5 @@
 import { useLocation, Link } from 'react-router-dom'; 
-import { scrollToSection } from '../Utils/NavScrolltoSection'; 
+import { scrollToSection } from '../../Utils/NavScrolltoSection.jsx'; 
 
 function Nav() {
 

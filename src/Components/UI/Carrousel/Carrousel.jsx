@@ -1,10 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
-import Button from './Button';
-import Overlay from './Overlay';
-import StarFilled from './StarFilled';
-import StarEmpty from './StarEmpty';
+import Button from '../Button/Button';
+import Overlay from '../Overlay/Overlay.jsx';
+import StarFilled from '../NotationStars/StarFilled.jsx';
+import StarEmpty from '../NotationStars/StarEmpty.jsx';
 
 const Carrousel = () => {
   const [slides, setSlides] = useState([]); 
@@ -13,7 +13,7 @@ const Carrousel = () => {
   useEffect(() => {
     fetch('/carrouselData.json')
       .then(response => response.json())
-      .then(data => setSlides(data))
+      .then(data => setSlides(data.reverse()))
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 

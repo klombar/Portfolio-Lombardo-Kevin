@@ -122,6 +122,7 @@
     overflow: hidden;
     border: 1px solid lightgrey;
     transition: transform 0.6s ease, box-shadow 0.6s ease;
+    line-height: 1.5;
 
     &:hover {
       transform: translate3d(-10px, -10px, 0);

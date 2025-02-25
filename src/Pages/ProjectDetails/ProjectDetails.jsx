@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import Button from '../Components/UI/Button';
+import Button from '../../Components/UI/Button/Button.jsx';
 
 function ProjectDetails() {
   const { projectId } = useParams();

@@ -1,9 +1,9 @@
 import { useRef, useLayoutEffect } from 'react';
-import Main from '../Components/Layout/Main/Main.jsx';
-import Carrousel from '../Components/UI/Carrousel.jsx';
-import Form from '../Components/UI/Form.jsx';
-import Presentation from '../Components/UI/Presentation.jsx';
-import Competences from '../Components/UI/Competences.jsx';
+import Main from '../../Components/Layout/Main/Main.jsx';
+import Carrousel from '../../Components/UI/Carrousel/Carrousel.jsx';
+import Form from '../../Components/UI/Form/Form.jsx';
+import Presentation from '../../Components/UI/Presentation/Presentation.jsx';
+import Competences from '../../Components/UI/Competences/Competences.jsx';
 
 function HomePage() {
 
