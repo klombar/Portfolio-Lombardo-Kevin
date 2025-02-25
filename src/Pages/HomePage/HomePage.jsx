@@ -70,7 +70,7 @@ function HomePage() {
 
         <section
           ref={contactRef}
-          className={`contact hidden`} // Commence par hidden
+          className={`contact hidden`} 
           id='contact'
         >
           <h2 className='contact_title'>Contact</h2>

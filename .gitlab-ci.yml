@@ -39,7 +39,7 @@ run_tests:
   only:
     - main
 
-# Étape 3 : Commit et Push si les tests réussissent
+# Étape 3 : Commit et push si les tests passent
 commit_and_push_if_success:
   stage: commit_and_push
   script:

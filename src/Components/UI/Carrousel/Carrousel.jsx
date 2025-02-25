@@ -13,7 +13,7 @@ const Carrousel = () => {
   useEffect(() => {
     fetch('/carrouselData.json')
       .then(response => response.json())
-      .then(data => setSlides(data.reverse()))
+      .then(data => setSlides(data))
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
