@@ -43,12 +43,15 @@ run_tests:
 commit_and_push_if_success:
   stage: commit_and_push
   script:
-    - git config --global user.name "GitLab CI"
-    - git config --global user.email "ci@example.com"
-    - git clone https://oauth2:$GITHUB_TOKEN@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git
-    - cd $GITHUB_REPO
-    - git add .
-    - git diff --cached --quiet || git commit -m "Automated commit: Tests passed"
-    - git push https://oauth2:$GITHUB_TOKEN@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git main
+    - |
+      git config --global user.name "GitLab CI"
+      git config --global user.email "ci@example.com"
+      git clone https://oauth2:$GITHUB_TOKEN@github.com/klombar/Portfolio-Lombardo-Kevin.git
+      cd Portfolio-Lombardo-Kevin
+      git add .
+      if ! git diff --cached --quiet; then
+        git commit -m "Automated commit: Tests passed"
+        git push https://oauth2:$GITHUB_TOKEN@github.com/klombar/Portfolio-Lombardo-Kevin.git main
+      fi
   only:
     - main
