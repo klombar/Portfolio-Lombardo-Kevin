@@ -46,11 +46,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Debug Secrets (sans afficher les valeurs)
+        run: |
+          if [ -n "${{ secrets.VERCEL_ORG_ID }}" ]; then echo "✅ VERCEL_ORG_ID is set"; else echo "❌ VERCEL_ORG_ID is missing"; fi
+          if [ -n "${{ secrets.VERCEL_PROJECT_ID }}" ]; then echo "✅ VERCEL_PROJECT_ID is set"; else echo "❌ VERCEL_PROJECT_ID is missing"; fi
+          if [ -n "${{ secrets.VERCEL_TOKEN }}" ]; then echo "✅ VERCEL_TOKEN is set"; else echo "❌ VERCEL_TOKEN is missing"; fi
+
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-
-
