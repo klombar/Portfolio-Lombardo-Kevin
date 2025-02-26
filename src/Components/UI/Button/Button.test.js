@@ -7,9 +7,10 @@ describe("button", () => {
 
    const link = "https://example.com";
 
-   it("should fail this test", () => {
-      expect(true).toBe(false);
-    });
+   it('should render a button', () => {
+      render(<Button classname='button'>click me</Button>);
+      expect(screen.getByText('click me')).toBeInTheDocument();
+   });
 
 
    if(link){
@@ -38,7 +39,7 @@ describe("button", () => {
    it('should get the focus when tabbed', async () => {
       render(<button>click me</button>);
       await userEvent.tab();
-      expect (screen.getByRole('button', { name: /click me/i })).toHaveFocus();
+      expect (screen.getByLabelText('button', { name: /click me/i })).toHaveFocus();
    })
 
 
