@@ -39,7 +39,7 @@ describe("button", () => {
    it('should get the focus when tabbed', async () => {
       render(<button>click me</button>);
       await userEvent.tab();
-      expect (screen.getByLabelText('button', { name: /click me/i })).toHaveFocus();
+      expect (screen.getByRole('button', { name: /click me/i })).toHaveFocus();
    })
 
 

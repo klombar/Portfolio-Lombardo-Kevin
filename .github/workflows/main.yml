@@ -36,4 +36,21 @@ jobs:
       - name: Run tests
         run: npm test -- --maxWorkers=2 --ci
 
+    deploy:
+    name: Deploy to Vercel
+    needs: test  # Empêche le déploiement si les tests échouent
+    runs-on: ubuntu-latest
+    if: success()  # Vérifie que les tests ont bien réussi
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+
 
