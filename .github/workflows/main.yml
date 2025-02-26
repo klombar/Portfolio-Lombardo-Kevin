@@ -27,18 +27,6 @@ jobs:
 
       - name: Run tests
         run: npm test
-
-  deploy:
-    name: Deploy to Vercel
-    needs: test # Ne déploie que si les tests passent
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
