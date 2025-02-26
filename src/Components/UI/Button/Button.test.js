@@ -9,7 +9,7 @@ describe("button", () => {
 
    it('should render a button', () => {
       render(<Button classname='button'>click me</Button>);
-      expect(screen.getByText('click')).toBeInTheDocument();
+      expect(screen.getByText('click me')).toBeInTheDocument();
    });
 
 
