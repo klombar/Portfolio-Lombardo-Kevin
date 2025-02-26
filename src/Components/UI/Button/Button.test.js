@@ -7,10 +7,9 @@ describe("button", () => {
 
    const link = "https://example.com";
 
-   it('should render a button', () => {
-      render(<Button classname='button'>click me</Button>);
-      expect(screen.getByText('click me')).toBeInTheDocument();
-   });
+   it("should fail this test", () => {
+      expect(true).toBe(false);
+    });
 
 
    if(link){
