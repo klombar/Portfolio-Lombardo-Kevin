@@ -3,16 +3,12 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main # Déclenche l'action à chaque push sur main
-  pull_request:
-    branches:
-      - main # Déclenche l'action sur une PR vers main
+      - main  # Change si ta branche principale a un autre nom
 
 jobs:
   test:
-    name: Run Jest Tests
+    name: Run Tests
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -22,39 +18,23 @@ jobs:
         with:
           node-version: 18
 
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
       - name: Install dependencies
         run: npm install
 
       - name: Run tests
-        run: npm test -- --maxWorkers=2 --ci
+        run: npm run test
 
   deploy:
     name: Deploy to Vercel
-    needs: test  # Empêche le déploiement si les tests échouent
+    needs: test  # Attend que les tests réussissent avant de déployer
     runs-on: ubuntu-latest
-    if: success()  # Vérifie que les tests ont bien réussi
-
+    if: success()  # Ne se lance que si les tests passent
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Debug Secrets (sans afficher les valeurs)
-        run: |
-          if [ -n "${{ secrets.VERCEL_ORG_ID }}" ]; then echo "✅ VERCEL_ORG_ID is set"; else echo "❌ VERCEL_ORG_ID is missing"; fi
-          if [ -n "${{ secrets.VERCEL_PROJECT_ID }}" ]; then echo "✅ VERCEL_PROJECT_ID is set"; else echo "❌ VERCEL_PROJECT_ID is missing"; fi
-          if [ -n "${{ secrets.VERCEL_TOKEN }}" ]; then echo "✅ VERCEL_TOKEN is set"; else echo "❌ VERCEL_TOKEN is missing"; fi
+      - name: Install Vercel CLI
+        run: npm install -g vercel
 
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --yes
